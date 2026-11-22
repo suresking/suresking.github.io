@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html ><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.min.css?v=5AD36185" /><link rel="stylesheet" href="../css/fontawesome.min.css?v=5AD36185" /><link rel="stylesheet" href="../css/solid.min.css?v=5AD36185" /><link rel="stylesheet" href="../css/regular.min.css?v=5AD36185" /><link rel="stylesheet" href="../css/brands.min.css?v=5AD36185" /><link rel="stylesheet" href="../css/presentationStyle.css?v=5AD36185" /><link rel="stylesheet" href="../css/zh-CN.css" /><script src="../scripts/jquery-3.7.1.min.js"></script><script src="../scripts/clipboard.min.js?v=5AD36185"></script><script src="../scripts/highlight.min.js?v=5AD36185"></script><script src="../scripts/themeSwitcher.js?v=5AD36185"></script><script src="../scripts/presentationStyle.js?v=5AD36185"></script><title>EncodingHelper 类</title><meta name="Title" content="EncodingHelper" /><meta name="Help.Id" content="T:Suresking.Utility.EncodingHelper" /><meta name="Help.ContentType" content="Reference" /><meta name="container" content="Suresking.Utility" /><meta name="guid" content="T_Suresking_Utility_EncodingHelper" /><meta name="Description" content="增强版文件编码检测工具类（." /><meta name="tocParentId" content="1" /></head><body><header class="pageHeader" id="Header"><div class="level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div id="DocumentationTitle" class="level-item">A Sandcastle Documented Class Library</div></div><div id="LangFilterSearchContainer" class="level-right"><div id="ThemeSwitcher" class="level-item" title="Toggle theme" aria-label="Toggle theme"><span class="icon"><i class="fa fa-regular fa-moon theme-icon-dark"></i><i class="fa fa-sun theme-icon-light"></i></span></div><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></header><main><article><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div id="ContentContainer" class="columns pl-5 pr-5"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu"><li>Loading...</li></ul></nav></div><div id="Resizer" class="is-hidden"></div><div id="TopicContent" class="column content is-7"><h1>Encoding<wbr />Helper 类</h1><div class="summary">
+            增强版文件编码检测工具类（.NET 6+）。
+            <p>
+            提供三套 API，按文件规模与使用场景选择：
+            <ul><li><b>全量读取</b>：<a href="M_Suresking_Utility_EncodingHelper_ReadFileWithEncoding.htm">ReadFileWithEncoding(String)</a> / <a href="M_Suresking_Utility_EncodingHelper_ReadFileWithEncodingAsync.htm">ReadFileWithEncodingAsync(String, CancellationToken)</a>，
+              一次性读入内存并解码，适合中小文件。</li><li><b>仅探测头部</b>：<a href="M_Suresking_Utility_EncodingHelper_GetFileEncoding.htm">GetFileEncoding(String)</a> / <a href="M_Suresking_Utility_EncodingHelper_DetectFileEncoding.htm">DetectFileEncoding(String)</a> 及其异步、Probe 变体，
+              只读取文件头部若干字节用于判断编码，适合超大文件或只需知道编码的场景。</li><li><b>流式读取</b>：<a href="M_Suresking_Utility_EncodingHelper_OpenReader.htm">OpenReader(String, Int32, Int32)</a> / <a href="M_Suresking_Utility_EncodingHelper_ReadLinesAsync.htm">ReadLinesAsync(String, Func<span id="LSTC9BE2948_0" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>String, CancellationToken, ValueTask<span id="LSTC9BE2948_1" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, Int32, CancellationToken)</a>，
+              以恒定内存占用逐行处理超大文件。</li></ul></p><p>
+            检测优先级：<b>BOM → 严格 UTF-8 校验 → 第三方统计检测（置信度阈值）→ 兜底</b>。
+            兜底策略因 API 而异：全量读取兜底为 <a href="F_Suresking_Utility_EncodingHelper_Gb18030.htm">Gb18030</a>，头部探测兜底为 <a href="https://learn.microsoft.com/dotnet/api/system.text.encoding.utf8" target="_blank" rel="noopener noreferrer">UTF8</a>。
+            </p></div><h2 class="quickLinkHeader">Definition</h2><div id="IDBSection"><strong>命名空间：</strong> <a href="N_Suresking_Utility.htm">Suresking.Utility</a><br /><strong>程序集：</strong> Suresking.Utility (在 Suresking.Utility.dll 中) 版本：1.3.20+9f5f0e39c286801d0347077a3bcbea48de44d8b3<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="复制"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>复制</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="identifier">EncodingHelper</span></code></pre></div></div><dl class="inheritanceHierarchy"><dt>Inheritance</dt><dd><a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <span class="selflink">EncodingHelper</span></dd></dl></div><h2 class="quickLinkHeader">方法</h2><div id="IDCEASection"><table id="MethodList" class="table is-hoverable"><tr><td><a href="M_Suresking_Utility_EncodingHelper_DetectFileEncoding.htm">DetectFileEncoding</a></td><td>
+            尝试检测文件编码（只读取文件头部）。
+            返回 <span class="code">null</span> 表示"信息不足，无法可靠判断"，由调用方决定兜底策略。
+            </td></tr><tr><td><a href="M_Suresking_Utility_EncodingHelper_DetectFileEncodingAsync.htm">DetectFileEncodingAsync</a></td><td>
+            异步尝试检测文件编码（只读取文件头部）。返回 <span class="code">null</span> 表示信息不足。
+            </td></tr><tr><td><a href="M_Suresking_Utility_EncodingHelper_DetectFileEncodingByProbe.htm">DetectFileEncodingByProbe</a></td><td>
+            尝试检测文件编码（只读取头部前 <span class="parameter">probeSize</span> 字节）。
+            返回 <span class="code">null</span> 表示"头部信息不足（例如全 ASCII），无法可靠判断"。
+            </td></tr><tr><td><a href="M_Suresking_Utility_EncodingHelper_DetectFileEncodingByProbeAsync.htm">DetectFileEncodingByProbeAsync</a></td><td>
+            异步尝试检测文件编码（只读取头部）。返回 <span class="code">null</span> 表示信息不足。
+            </td></tr><tr><td><a href="M_Suresking_Utility_EncodingHelper_GetFileEncoding.htm">GetFileEncoding</a></td><td>
+            精准检测文件编码（只读取文件头部，不做全量加载）。
+            若信息不足（例如头部全是 ASCII），返回 UTF-8 兜底。
+            </td></tr><tr><td><a href="M_Suresking_Utility_EncodingHelper_GetFileEncodingAsync.htm">GetFileEncodingAsync</a></td><td>
+            异步精准检测文件编码（只读取文件头部）。
+            信息不足时返回 UTF-8 兜底。
+            </td></tr><tr><td><a href="M_Suresking_Utility_EncodingHelper_GetFileEncodingByProbe.htm">GetFileEncodingByProbe</a></td><td>
+            检测文件编码（只读取头部前 <span class="parameter">probeSize</span> 字节，适合超大文件）。
+            若信息不足，返回 UTF-8 兜底。
+            </td></tr><tr><td><a href="M_Suresking_Utility_EncodingHelper_GetFileEncodingByProbeAsync.htm">GetFileEncodingByProbeAsync</a></td><td>
+            异步检测文件编码（只读取头部，适合超大文件）。
+            信息不足时返回 UTF-8 兜底。
+            </td></tr><tr><td><a href="M_Suresking_Utility_EncodingHelper_OpenReader.htm">OpenReader</a></td><td>
+            打开带编码自动检测的 <a href="https://learn.microsoft.com/dotnet/api/system.io.streamreader" target="_blank" rel="noopener noreferrer">StreamReader</a>（流式读取，内存占用恒定，适合超大文件）。
+            <p>
+            先用探测 API 判断初始编码，再由 <a href="https://learn.microsoft.com/dotnet/api/system.io.streamreader" target="_blank" rel="noopener noreferrer">StreamReader</a> 在读取过程中根据 BOM 自动校正。
+            </p></td></tr><tr><td><a href="M_Suresking_Utility_EncodingHelper_OpenReaderAsync.htm">OpenReaderAsync</a></td><td>
+            异步打开带编码自动检测的 <a href="https://learn.microsoft.com/dotnet/api/system.io.streamreader" target="_blank" rel="noopener noreferrer">StreamReader</a>（流式读取，适合超大文件）。
+            </td></tr><tr><td><a href="M_Suresking_Utility_EncodingHelper_ReadFileWithEncoding.htm">ReadFileWithEncoding</a></td><td>
+            读取文件内容并检测编码（一次性读取，适合中小文件）。
+            <p>
+            检测策略见 <span class="noLink">DecodeBytes(<span id="LSTC9BE2948_2" data-languageSpecificText="cpp=array&lt;"></span>Byte<span id="LSTC9BE2948_3" data-languageSpecificText="cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]"></span>)</span>：BOM 优先；无 BOM 时依次尝试严格 UTF-8、统计检测，
+            全部无法可靠判定时兜底为 <a href="F_Suresking_Utility_EncodingHelper_Gb18030.htm">Gb18030</a>。
+            </p></td></tr><tr><td><a href="M_Suresking_Utility_EncodingHelper_ReadFileWithEncodingAsync.htm">ReadFileWithEncodingAsync</a></td><td>
+            异步读取文件内容并检测编码（一次性读取，适合中小文件）。
+            </td></tr><tr><td><a href="M_Suresking_Utility_EncodingHelper_ReadLinesAsync.htm">ReadLinesAsync</a></td><td>
+            逐行流式读取超大文件（自动检测编码）。每行回调 <span class="parameter">onLine</span>。
+            <p>
+            读取过程中在每次迭代前检查取消令牌，因此可以及时响应取消。
+            注意：回调函数按顺序串行执行，切勿在回调中执行长时间阻塞操作，否则会拖慢整体读取。
+            </p></td></tr><tr><td><a href="M_Suresking_Utility_EncodingHelper_ReadTextWithDetectedEncoding.htm">ReadTextWithDetectedEncoding</a></td><td>
+            读取文件并返回内容 + 原始编码（用于"读取后再以原编码写回"场景）。
+            <p>内部调用 <a href="M_Suresking_Utility_EncodingHelper_ReadFileWithEncoding.htm">ReadFileWithEncoding(String)</a>，会一次性读取整个文件。</p></td></tr><tr><td><a href="M_Suresking_Utility_EncodingHelper_ReadTextWithDetectedEncodingAsync.htm">ReadTextWithDetectedEncodingAsync</a></td><td>
+            异步读取文件并返回内容 + 原始编码（用于"读取后再以原编码写回"场景）。
+            </td></tr></table></div><h2 class="quickLinkHeader">字段</h2><div id="IDAEASection"><table id="FieldList" class="table is-hoverable"><tr><td><a href="F_Suresking_Utility_EncodingHelper_Gb18030.htm">Gb18030</a></td><td>
+            中文场景常用兜底编码（GBK/GB2312 的超集）。
+            </td></tr><tr><td><a href="F_Suresking_Utility_EncodingHelper_Utf8NoBom.htm">Utf8NoBom</a></td><td>
+            无 BOM 的 UTF-8（写回时使用，避免在文件开头引入 BOM）。
+            </td></tr></table></div><h2 class="quickLinkHeader">参见</h2><div id="seeAlsoSection"><h4>引用</h4><div><a href="N_Suresking_Utility.htm">Suresking.Utility 命名空间</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Definition</a></li><li><a class="quickLink">方法</a></li><li><a class="quickLink">字段</a></li><li><a class="quickLink">参见</a></li></ul></nav></div></div></article></main><script>$(function(){
+SetDefaultLanguage("cs");
+LoadToc();
+InitializeQuickLinks();
+hljs.highlightAll();
+});</script></body></html>

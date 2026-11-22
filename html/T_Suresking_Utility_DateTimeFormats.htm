@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html ><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.min.css?v=5AD36185" /><link rel="stylesheet" href="../css/fontawesome.min.css?v=5AD36185" /><link rel="stylesheet" href="../css/solid.min.css?v=5AD36185" /><link rel="stylesheet" href="../css/regular.min.css?v=5AD36185" /><link rel="stylesheet" href="../css/brands.min.css?v=5AD36185" /><link rel="stylesheet" href="../css/presentationStyle.css?v=5AD36185" /><link rel="stylesheet" href="../css/zh-CN.css" /><script src="../scripts/jquery-3.7.1.min.js"></script><script src="../scripts/clipboard.min.js?v=5AD36185"></script><script src="../scripts/highlight.min.js?v=5AD36185"></script><script src="../scripts/themeSwitcher.js?v=5AD36185"></script><script src="../scripts/presentationStyle.js?v=5AD36185"></script><title>DateTimeFormats 类</title><meta name="Title" content="DateTimeFormats" /><meta name="Help.Id" content="T:Suresking.Utility.DateTimeFormats" /><meta name="Help.ContentType" content="Reference" /><meta name="container" content="Suresking.Utility" /><meta name="guid" content="T_Suresking_Utility_DateTimeFormats" /><meta name="Description" content="日期时间格式化字符串预定义类。 注意：部分中文格式依赖当前线程的 CultureInfo 为中文环境，否则可能输出英文。" /><meta name="tocParentId" content="1" /></head><body><header class="pageHeader" id="Header"><div class="level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div id="DocumentationTitle" class="level-item">A Sandcastle Documented Class Library</div></div><div id="LangFilterSearchContainer" class="level-right"><div id="ThemeSwitcher" class="level-item" title="Toggle theme" aria-label="Toggle theme"><span class="icon"><i class="fa fa-regular fa-moon theme-icon-dark"></i><i class="fa fa-sun theme-icon-light"></i></span></div><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></header><main><article><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div id="ContentContainer" class="columns pl-5 pr-5"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu"><li>Loading...</li></ul></nav></div><div id="Resizer" class="is-hidden"></div><div id="TopicContent" class="column content is-7"><h1>Date<wbr />Time<wbr />Formats 类</h1><div class="summary">
+            日期时间格式化字符串预定义类。
+            注意：部分中文格式依赖当前线程的 CultureInfo 为中文环境，否则可能输出英文。
+            </div><h2 class="quickLinkHeader">Definition</h2><div id="IDBSection"><strong>命名空间：</strong> <a href="N_Suresking_Utility.htm">Suresking.Utility</a><br /><strong>程序集：</strong> Suresking.Utility (在 Suresking.Utility.dll 中) 版本：1.3.20+9f5f0e39c286801d0347077a3bcbea48de44d8b3<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="复制"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>复制</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="identifier">DateTimeFormats</span></code></pre></div></div><dl class="inheritanceHierarchy"><dt>Inheritance</dt><dd><a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <span class="selflink">DateTimeFormats</span></dd></dl></div><h2 class="quickLinkHeader">备注</h2><div id="IDBCSection"><p>本类集中定义常用日期时间格式字符串，配合 <a href="https://learn.microsoft.com/dotnet/api/system.datetime.tostring#system-datetime-tostring(system-string)" target="_blank" rel="noopener noreferrer">ToString(String)</a> 使用，
+            或通过 <a href="T_Suresking_Utility_DateTimeFormatExtensions.htm">DateTimeFormatExtensions</a> 中的扩展方法直接格式化。</p><p><b>文化敏感性：</b></p><ul><li>带固定中文字面量（年/月/日/时/分/秒）的格式（<a href="F_Suresking_Utility_DateTimeFormats_DateOnlyCN.htm">DateOnlyCN</a>、<a href="F_Suresking_Utility_DateTimeFormats_DateTimeCN.htm">DateTimeCN</a>、
+            <a href="F_Suresking_Utility_DateTimeFormats_TimeOnlyCN.htm">TimeOnlyCN</a>）本身含中文字符，与 CultureInfo 无关，任何环境都输出中文分隔符；</li><li>使用标准说明符 <span class="code">ddd</span>/<span class="code">dddd</span> 的 <a href="F_Suresking_Utility_DateTimeFormats_WeekDayAbbreviated.htm">WeekDayAbbreviated</a>、<a href="F_Suresking_Utility_DateTimeFormats_WeekDayName.htm">WeekDayName</a>
+            真正依赖 CultureInfo：中文环境输出"周三/星期三"，英文环境输出"Wed/Wednesday"；</li><li>其余数字格式（yyyy/MM/dd 等）不受 CultureInfo 影响，但若使用 <a href="https://learn.microsoft.com/dotnet/api/system.datetime.tostring#system-datetime-tostring(system-string)" target="_blank" rel="noopener noreferrer">ToString(String)</a>
+            的默认重载，数字分组/日历体系仍可能受当前区域影响，建议配合 <a href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo.invariantculture" target="_blank" rel="noopener noreferrer">InvariantCulture</a> 使用。</li></ul><p><b>ISO 8601 说明：</b><a href="F_Suresking_Utility_DateTimeFormats_Iso8601.htm">Iso8601</a> 与 <a href="F_Suresking_Utility_DateTimeFormats_Iso8601WithMilliseconds.htm">Iso8601WithMilliseconds</a> 使用 <span class="code">K</span> 说明符表示时区，
+            但不会把时间转换为 UTC，输出的是 DateTime 自身的 Kind 与偏移。严格 ISO 8601 请先 <span class="code">ToUniversalTime()</span> 再格式化，
+            或使用 <span class="code">DateTimeOffset.ToString("O")</span>。</p></div><h2 class="quickLinkHeader">字段</h2><div id="IDAEASection"><table id="FieldList" class="table is-hoverable"><tr><td><a href="F_Suresking_Utility_DateTimeFormats_DateOnly.htm">DateOnly</a></td><td>
+            2026-03-18
+            </td></tr><tr><td><a href="F_Suresking_Utility_DateTimeFormats_DateOnlyCN.htm">DateOnlyCN</a></td><td>
+            2026年03月18日 (需中文环境)
+            </td></tr><tr><td><a href="F_Suresking_Utility_DateTimeFormats_DateShort.htm">DateShort</a></td><td>
+            2026/03/18
+            </td></tr><tr><td><a href="F_Suresking_Utility_DateTimeFormats_DateTime.htm">DateTime</a></td><td>
+            2026-03-18 15:30:55
+            </td></tr><tr><td><a href="F_Suresking_Utility_DateTimeFormats_DateTimeCN.htm">DateTimeCN</a></td><td>
+            2026年03月18日 15时30分55秒 (需中文环境)
+            </td></tr><tr><td><a href="F_Suresking_Utility_DateTimeFormats_DateTimeFull.htm">DateTimeFull</a></td><td>
+            2026-03-18 15:30:55.123
+            </td></tr><tr><td><a href="F_Suresking_Utility_DateTimeFormats_FileName_Date.htm">FileName_Date</a></td><td>
+            20260318
+            </td></tr><tr><td><a href="F_Suresking_Utility_DateTimeFormats_FileName_DateTime.htm">FileName_DateTime</a></td><td>
+            20260318_153055
+            </td></tr><tr><td><a href="F_Suresking_Utility_DateTimeFormats_FileName_DateTimeFull.htm">FileName_DateTimeFull</a></td><td>
+            20260318_153055_123
+            </td></tr><tr><td><a href="F_Suresking_Utility_DateTimeFormats_Iso8601.htm">Iso8601</a></td><td>
+            类ISO 8601格式。注意：此格式仅输出当前时间的字符串表示，不会自动转换为UTC时间。
+            若需严格符合ISO 8601，请先将DateTime转为UniversalTime后再格式化。
+            </td></tr><tr><td><a href="F_Suresking_Utility_DateTimeFormats_Iso8601WithMilliseconds.htm">Iso8601WithMilliseconds</a></td><td>
+            带毫秒的类ISO 8601格式。注意同上，使用"K"说明符以正确表示时区。
+            </td></tr><tr><td><a href="F_Suresking_Utility_DateTimeFormats_MonthDayOnly.htm">MonthDayOnly</a></td><td>
+            03-18
+            </td></tr><tr><td><a href="F_Suresking_Utility_DateTimeFormats_TimeOnly.htm">TimeOnly</a></td><td>
+            15:30:55
+            </td></tr><tr><td><a href="F_Suresking_Utility_DateTimeFormats_TimeOnlyCN.htm">TimeOnlyCN</a></td><td>
+            15时30分55秒 (需中文环境)
+            </td></tr><tr><td><a href="F_Suresking_Utility_DateTimeFormats_TimeShort.htm">TimeShort</a></td><td>
+            15:30
+            </td></tr><tr><td><a href="F_Suresking_Utility_DateTimeFormats_TimeWithMilliseconds.htm">TimeWithMilliseconds</a></td><td>
+            15:30:55.123
+            </td></tr><tr><td><a href="F_Suresking_Utility_DateTimeFormats_WeekDayAbbreviated.htm">WeekDayAbbreviated</a></td><td>
+            星期缩写。中文环境输出"周三"，英文环境输出"Wed"，取决于当前 CultureInfo。
+            </td></tr><tr><td><a href="F_Suresking_Utility_DateTimeFormats_WeekDayName.htm">WeekDayName</a></td><td>
+            星期全称。中文环境输出"星期三"，英文环境输出"Wednesday"，取决于当前 CultureInfo。
+            </td></tr><tr><td><a href="F_Suresking_Utility_DateTimeFormats_YearMonthOnly.htm">YearMonthOnly</a></td><td>
+            2026-03
+            </td></tr></table></div><h2 class="quickLinkHeader">参见</h2><div id="seeAlsoSection"><h4>引用</h4><div><a href="N_Suresking_Utility.htm">Suresking.Utility 命名空间</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Definition</a></li><li><a class="quickLink">备注</a></li><li><a class="quickLink">字段</a></li><li><a class="quickLink">参见</a></li></ul></nav></div></div></article></main><script>$(function(){
+SetDefaultLanguage("cs");
+LoadToc();
+InitializeQuickLinks();
+hljs.highlightAll();
+});</script></body></html>

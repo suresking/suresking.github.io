@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html ><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.min.css?v=5AD36185" /><link rel="stylesheet" href="../css/fontawesome.min.css?v=5AD36185" /><link rel="stylesheet" href="../css/solid.min.css?v=5AD36185" /><link rel="stylesheet" href="../css/regular.min.css?v=5AD36185" /><link rel="stylesheet" href="../css/brands.min.css?v=5AD36185" /><link rel="stylesheet" href="../css/presentationStyle.css?v=5AD36185" /><link rel="stylesheet" href="../css/zh-CN.css" /><script src="../scripts/jquery-3.7.1.min.js"></script><script src="../scripts/clipboard.min.js?v=5AD36185"></script><script src="../scripts/highlight.min.js?v=5AD36185"></script><script src="../scripts/themeSwitcher.js?v=5AD36185"></script><script src="../scripts/presentationStyle.js?v=5AD36185"></script><title>GenericCache&lt;TKey, TValue&gt; 类</title><meta name="Title" content="GenericCache&lt;TKey, TValue&gt;" /><meta name="Help.Id" content="T:Suresking.Utility.GenericCache`2" /><meta name="Help.ContentType" content="Reference" /><meta name="container" content="Suresking.Utility" /><meta name="guid" content="T_Suresking_Utility_GenericCache_2" /><meta name="Description" content="提供泛型静态缓存功能 支持多线程并发访问 注意：不同的泛型参数类型会生成完全独立的缓存实例" /><meta name="tocParentId" content="1" /></head><body><header class="pageHeader" id="Header"><div class="level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div id="DocumentationTitle" class="level-item">A Sandcastle Documented Class Library</div></div><div id="LangFilterSearchContainer" class="level-right"><div id="ThemeSwitcher" class="level-item" title="Toggle theme" aria-label="Toggle theme"><span class="icon"><i class="fa fa-regular fa-moon theme-icon-dark"></i><i class="fa fa-sun theme-icon-light"></i></span></div><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></header><main><article><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div id="ContentContainer" class="columns pl-5 pr-5"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu"><li>Loading...</li></ul></nav></div><div id="Resizer" class="is-hidden"></div><div id="TopicContent" class="column content is-7"><h1>Generic<wbr />Cache<span id="LSTD1F67943_0" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="typeparameter">TKey</span>, <span class="typeparameter">TValue</span><span id="LSTD1F67943_1" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span> 类</h1><div class="summary">
+            提供泛型静态缓存功能
+            支持多线程并发访问
+            注意：不同的泛型参数类型会生成完全独立的缓存实例
+            </div><h2 class="quickLinkHeader">Definition</h2><div id="IDBSection"><strong>命名空间：</strong> <a href="N_Suresking_Utility.htm">Suresking.Utility</a><br /><strong>程序集：</strong> Suresking.Utility (在 Suresking.Utility.dll 中) 版本：1.3.20+9f5f0e39c286801d0347077a3bcbea48de44d8b3<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="复制"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>复制</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="identifier">GenericCache</span>&lt;TKey, TValue&gt;
+</code></pre></div></div><dl class="inheritanceHierarchy"><dt>Inheritance</dt><dd><a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <span class="selflink">GenericCache<span id="LSTD1F67943_2" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TKey, TValue<span id="LSTD1F67943_3" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></span></dd></dl><h4>类型参数</h4><dl><dt class="has-text-weight-normal"><span class="parameter">TKey</span></dt><dd>缓存键的类型，必须为不可为null的类型</dd><dt class="has-text-weight-normal"><span class="parameter">TValue</span></dt><dd>缓存值的类型</dd></dl></div><h2 class="quickLinkHeader">属性</h2><div id="IDQFASection"><table id="PropertyList" class="table is-hoverable"><tr><td><a href="P_Suresking_Utility_GenericCache_2_Count.htm">Count</a></td><td>
+            获取缓存项数量
+            此属性是线程安全的
+            </td></tr></table></div><h2 class="quickLinkHeader">方法</h2><div id="IDBFASection"><table id="MethodList" class="table is-hoverable"><tr><td><a href="M_Suresking_Utility_GenericCache_2_AddOrUpdate_1.htm">AddOrUpdate(TKey, TValue)</a></td><td>
+            添加或更新缓存项
+            如果键不存在则添加，如果键存在则更新
+            </td></tr><tr><td><a href="M_Suresking_Utility_GenericCache_2_AddOrUpdate.htm">AddOrUpdate(TKey, Func<span id="LSTD1F67943_4" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>TKey, TValue<span id="LSTD1F67943_5" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, Func<span id="LSTD1F67943_6" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>TKey, TValue, TValue<span id="LSTD1F67943_7" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td>
+            添加或更新缓存项（通过更新函数）
+            提供更灵活的值更新逻辑
+            </td></tr><tr><td><a href="M_Suresking_Utility_GenericCache_2_AddRange.htm">AddRange</a></td><td>
+            批量添加缓存项
+            如果键已存在，则跳过该键值对
+            </td></tr><tr><td><a href="M_Suresking_Utility_GenericCache_2_Clear.htm">Clear</a></td><td>
+            清空所有缓存
+            同时清理同步缓存和异步缓存
+            </td></tr><tr><td><a href="M_Suresking_Utility_GenericCache_2_ContainsKey.htm">ContainsKey</a></td><td>
+            检查指定缓存项是否存在
+            此方法只检查键是否存在，不关心对应的值
+            </td></tr><tr><td><a href="M_Suresking_Utility_GenericCache_2_ContainsValue.htm">ContainsValue</a></td><td>
+            检查指定缓存值是否存在
+            此方法在缓存中搜索指定的值
+            注意：此操作的时间复杂度为O(n)，n为缓存项数量
+            </td></tr><tr><td><a href="M_Suresking_Utility_GenericCache_2_Get.htm">Get</a></td><td>
+            获取缓存项
+            如果缓存中不存在指定的键，则返回默认值
+            </td></tr><tr><td><a href="M_Suresking_Utility_GenericCache_2_GetAllItems.htm">GetAllItems</a></td><td>
+            获取缓存中的所有键值对
+            返回的列表是只读的，对缓存的修改不会影响此列表
+            注意：在缓存较大时，此操作可能会消耗较多内存
+            </td></tr><tr><td><a href="M_Suresking_Utility_GenericCache_2_GetByKey.htm">GetByKey</a></td><td>
+            通过键获取缓存项
+            如果键不存在，抛出KeyNotFoundException异常
+            </td></tr><tr><td><a href="M_Suresking_Utility_GenericCache_2_GetKeys.htm">GetKeys</a></td><td>
+            获取缓存中所有键的列表
+            返回的列表是只读的，对缓存的修改不会影响此列表
+            注意：在缓存较大时，此操作可能会消耗较多内存
+            </td></tr><tr><td><a href="M_Suresking_Utility_GenericCache_2_GetOrAdd.htm">GetOrAdd</a></td><td>
+            获取或添加缓存项
+            如果键不存在，则添加指定的值
+            此方法是原子操作，线程安全
+            </td></tr><tr><td><a href="M_Suresking_Utility_GenericCache_2_GetOrCreate_1.htm">GetOrCreate(TKey, Func<span id="LSTD1F67943_8" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>TKey, TValue<span id="LSTD1F67943_9" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td>
+            获取缓存项，如果不存在则通过带键参数的工厂函数创建并缓存
+            此方法是线程安全的，工厂函数在需要时最多执行一次
+            </td></tr><tr><td><a href="M_Suresking_Utility_GenericCache_2_GetOrCreate.htm">GetOrCreate(TKey, Func<span id="LSTD1F67943_10" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>TValue<span id="LSTD1F67943_11" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td>
+            获取缓存项，如果不存在则通过工厂函数创建并缓存
+            此方法是线程安全的，工厂函数在需要时最多执行一次
+            </td></tr><tr><td><a href="M_Suresking_Utility_GenericCache_2_GetOrCreateAsync_1.htm">GetOrCreateAsync(TKey, Func<span id="LSTD1F67943_12" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>TKey, Task<span id="LSTD1F67943_13" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>TValue<span id="LSTD1F67943_14" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span><span id="LSTD1F67943_15" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td>
+            异步获取缓存项，如果不存在则通过带键参数的异步工厂函数创建并缓存
+            此方法防止竞态条件，确保同一键的异步操作只执行一次
+            </td></tr><tr><td><a href="M_Suresking_Utility_GenericCache_2_GetOrCreateAsync.htm">GetOrCreateAsync(TKey, Func<span id="LSTD1F67943_16" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>Task<span id="LSTD1F67943_17" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>TValue<span id="LSTD1F67943_18" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span><span id="LSTD1F67943_19" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td>
+            异步获取缓存项，如果不存在则通过异步工厂函数创建并缓存
+            此方法防止竞态条件，确保同一键的异步操作只执行一次
+            </td></tr><tr><td><a href="M_Suresking_Utility_GenericCache_2_GetValues.htm">GetValues</a></td><td>
+            获取缓存中所有值的列表
+            返回的列表是只读的，对缓存的修改不会影响此列表
+            注意：在缓存较大时，此操作可能会消耗较多内存
+            </td></tr><tr><td><a href="M_Suresking_Utility_GenericCache_2_Remove.htm">Remove(TKey)</a></td><td>
+            移除指定缓存项
+            不会抛出异常，即使键不存在也会返回false
+            </td></tr><tr><td><a href="M_Suresking_Utility_GenericCache_2_Remove_1.htm">Remove(TKey, TValue<span id="LSTD1F67943_20" data-languageSpecificText="cpp=%"></span>)</a></td><td>
+            移除指定缓存项并返回移除的值
+            如果键存在，返回被移除的值；如果不存在，返回default(TValue)
+            </td></tr><tr><td><a href="M_Suresking_Utility_GenericCache_2_TryGet.htm">TryGet</a></td><td>
+            尝试获取缓存项
+            不会抛出异常，通过返回值表示是否获取成功
+            </td></tr><tr><td><a href="M_Suresking_Utility_GenericCache_2_TryUpdate.htm">TryUpdate</a></td><td>
+            更新缓存项
+            仅当当前值与比较值相等时才更新为新值
+            此方法是原子操作，线程安全
+            </td></tr></table></div><h2 class="quickLinkHeader">参见</h2><div id="seeAlsoSection"><h4>引用</h4><div><a href="N_Suresking_Utility.htm">Suresking.Utility 命名空间</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Definition</a></li><li><a class="quickLink">属性</a></li><li><a class="quickLink">方法</a></li><li><a class="quickLink">参见</a></li></ul></nav></div></div></article></main><script>$(function(){
+SetDefaultLanguage("cs");
+LoadToc();
+InitializeQuickLinks();
+hljs.highlightAll();
+});</script></body></html>

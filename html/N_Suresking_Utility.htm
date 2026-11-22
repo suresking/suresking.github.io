@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html ><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.min.css?v=5AD36185" /><link rel="stylesheet" href="../css/fontawesome.min.css?v=5AD36185" /><link rel="stylesheet" href="../css/solid.min.css?v=5AD36185" /><link rel="stylesheet" href="../css/regular.min.css?v=5AD36185" /><link rel="stylesheet" href="../css/brands.min.css?v=5AD36185" /><link rel="stylesheet" href="../css/presentationStyle.css?v=5AD36185" /><link rel="stylesheet" href="../css/zh-CN.css" /><script src="../scripts/jquery-3.7.1.min.js"></script><script src="../scripts/clipboard.min.js?v=5AD36185"></script><script src="../scripts/highlight.min.js?v=5AD36185"></script><script src="../scripts/themeSwitcher.js?v=5AD36185"></script><script src="../scripts/presentationStyle.js?v=5AD36185"></script><title>Suresking.Utility 命名空间</title><meta name="Title" content="Suresking.Utility" /><meta name="Help.Id" content="N:Suresking.Utility" /><meta name="Help.ContentType" content="Reference" /><meta name="container" content="Suresking.Utility" /><meta name="guid" content="N_Suresking_Utility" /><meta name="Description" content="提供通用的工具类，涵盖文件、编码、Excel、日志、加密、网络等辅助功能。" /><meta name="tocParentId" content="0" /></head><body><header class="pageHeader" id="Header"><div class="level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div id="DocumentationTitle" class="level-item">A Sandcastle Documented Class Library</div></div><div id="LangFilterSearchContainer" class="level-right"><div id="ThemeSwitcher" class="level-item" title="Toggle theme" aria-label="Toggle theme"><span class="icon"><i class="fa fa-regular fa-moon theme-icon-dark"></i><i class="fa fa-sun theme-icon-light"></i></span></div><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></header><main><article><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div id="ContentContainer" class="columns pl-5 pr-5"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu"><li>Loading...</li></ul></nav></div><div id="Resizer" class="is-hidden"></div><div id="TopicContent" class="column content is-7"><h1>Suresking.<wbr />Utility 命名空间</h1><div class="summary">
+            提供通用的工具类，涵盖文件、编码、Excel、日志、加密、网络等辅助功能。
+            </div><h2 class="quickLinkHeader">类</h2><div id="IDACASection"><table id="classList" class="table is-hoverable"><tr><td><a href="T_Suresking_Utility_AesHelper.htm">AesHelper</a></td><td>
+            AES 对称加密工具类。
+            </td></tr><tr><td><a href="T_Suresking_Utility_AuthorizationHelper.htm">AuthorizationHelper</a></td><td>
+            提供简单的防盗版验证和自毁功能。
+            </td></tr><tr><td><a href="T_Suresking_Utility_ChineseChar.htm">ChineseChar</a></td><td>
+            封装了简体中文的读音基本信息。
+            线程安全：本类的所有公共成员都是线程安全的。
+            </td></tr><tr><td><a href="T_Suresking_Utility_CommandHelper.htm">CommandHelper</a></td><td>
+            提供在 Windows 命令提示符（cmd.exe）下执行命令的方法。
+            </td></tr><tr><td><a href="T_Suresking_Utility_CommandResult.htm">CommandResult</a></td><td>
+            表示命令执行的结果。
+            </td></tr><tr><td><a href="T_Suresking_Utility_CopyDirectoryOptions.htm">CopyDirectoryOptions</a></td><td>
+            目录文本复制选项（支持链式配置）。
+            <p>所有 WithXxx 方法均为<strong>累加</strong>语义，可多次调用叠加。</p><h2 class="quickLinkHeader">示例</h2><div id="IDCGRCASection"><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="复制"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>复制</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">var opt = CopyDirectoryOptions.Create()
+    .WithExcludeFilePatterns(".g.cs", "AssemblyInfo")
+    .WithExcludeDirPatterns("bin", "obj")
+    .WithIncludeExtensions(".cs", ".txt")
+    .WithReplacePairs(new ReplacePair("Old", "New"))
+    .WithReplacePair("Old2", "New2");</code></pre></div></div></div></td></tr><tr><td><a href="T_Suresking_Utility_DataTableSplitExtensions.htm">DataTableSplitExtensions</a></td><td>
+            DataTable 拆分扩展方法
+            </td></tr><tr><td><a href="T_Suresking_Utility_DateTimeFormatExtensions.htm">DateTimeFormatExtensions</a></td><td>
+            DateTime 格式化扩展方法。
+            </td></tr><tr><td><a href="T_Suresking_Utility_DateTimeFormats.htm">DateTimeFormats</a></td><td>
+            日期时间格式化字符串预定义类。
+            注意：部分中文格式依赖当前线程的 CultureInfo 为中文环境，否则可能输出英文。
+            </td></tr><tr><td><a href="T_Suresking_Utility_DialogFilters.htm">DialogFilters</a></td><td>
+            显示 OpenFileDialog 或 SaveFileDialog 之前设置 Filter 属性<br />
+            一般格式：dlg.Filter = "All Files|*.*"; dlg.DefaultExt = ".txt";<br />
+            也可以设置缺省文件名：dlg.FileName = "Document"; // Default file name
+            </td></tr><tr><td><a href="T_Suresking_Utility_DialogFilters_FilterType.htm">DialogFilters<span id="LSTDA76DA5B_0" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>FilterType</a></td><td>
+            配置项的内容，这里不能使用结构
+            </td></tr><tr><td><a href="T_Suresking_Utility_DoubleExtension.htm">DoubleExtension</a></td><td>
+            提供浮点数（double）的安全比较和运算扩展方法。
+            </td></tr><tr><td><a href="T_Suresking_Utility_EncodingHelper.htm">EncodingHelper</a></td><td>
+            增强版文件编码检测工具类（.NET 6+）。
+            <p>
+            提供三套 API，按文件规模与使用场景选择：
+            <ul><li><b>全量读取</b>：<a href="M_Suresking_Utility_EncodingHelper_ReadFileWithEncoding.htm">ReadFileWithEncoding(String)</a> / <a href="M_Suresking_Utility_EncodingHelper_ReadFileWithEncodingAsync.htm">ReadFileWithEncodingAsync(String, CancellationToken)</a>，
+              一次性读入内存并解码，适合中小文件。</li><li><b>仅探测头部</b>：<a href="M_Suresking_Utility_EncodingHelper_GetFileEncoding.htm">GetFileEncoding(String)</a> / <a href="M_Suresking_Utility_EncodingHelper_DetectFileEncoding.htm">DetectFileEncoding(String)</a> 及其异步、Probe 变体，
+              只读取文件头部若干字节用于判断编码，适合超大文件或只需知道编码的场景。</li><li><b>流式读取</b>：<a href="M_Suresking_Utility_EncodingHelper_OpenReader.htm">OpenReader(String, Int32, Int32)</a> / <a href="M_Suresking_Utility_EncodingHelper_ReadLinesAsync.htm">ReadLinesAsync(String, Func<span id="LSTDA76DA5B_1" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>String, CancellationToken, ValueTask<span id="LSTDA76DA5B_2" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, Int32, CancellationToken)</a>，
+              以恒定内存占用逐行处理超大文件。</li></ul></p><p>
+            检测优先级：<b>BOM → 严格 UTF-8 校验 → 第三方统计检测（置信度阈值）→ 兜底</b>。
+            兜底策略因 API 而异：全量读取兜底为 <a href="F_Suresking_Utility_EncodingHelper_Gb18030.htm">Gb18030</a>，头部探测兜底为 <a href="https://learn.microsoft.com/dotnet/api/system.text.encoding.utf8" target="_blank" rel="noopener noreferrer">UTF8</a>。
+            </p></td></tr><tr><td><a href="T_Suresking_Utility_Enumeration.htm">Enumeration</a></td><td>
+             一个强类型枚举（Smart Enum）基类。
+            
+             <p><b>⚠️ 重要：枚举项必须使用"单例写法"，否则会埋下隐患。</b></p><p>推荐（整个进程内唯一实例）：</p><code>
+             public static readonly CardType Amex = new(1, nameof(Amex));   // 字段
+             public static CardType Visa { get; } = new(2, nameof(Visa));   // 只读属性
+             </code><p><b>不推荐</b>（每次访问都 new 一个新实例）：</p><code>
+             public static CardType MasterCard =&gt; new(3, nameof(MasterCard)); // ❌ 每次访问都 new
+             </code><p>
+             原因：<a href="T_Suresking_Utility_Enumeration.htm">Enumeration</a> 内部会缓存每个枚举项，<a href="M_Suresking_Utility_Enumeration_FromId__1.htm">FromId<span id="LSTDA76DA5B_3" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LSTDA76DA5B_4" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>(Int32)</a> /
+             <a href="M_Suresking_Utility_Enumeration_FromName__1.htm">FromName<span id="LSTDA76DA5B_5" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LSTDA76DA5B_6" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>(String)</a> 返回的是<b>缓存中的那个实例</b>，而属性写法每次
+             返回新实例。虽然 <span class="code">Equals</span> / <span class="code">==</span> 仍会判定相等，但以下场景会出问题：
+             </p><ul><li>用枚举项做 <span class="code">Dictionary</span> / <span class="code">HashSet</span> 的 key 时，引用不一致</li><li>用 <span class="code">ReferenceEquals</span> 判断时结果不符预期</li><li>附加了可变字段（未来扩展）时，实例状态无法共享</li></ul><p>完整用法示例：</p><code>
+             public class CardType : Enumeration
+             {
+                 public static readonly CardType Amex = new(1, nameof(Amex));
+                 public static readonly CardType Visa = new(2, nameof(Visa));
+                 public static readonly CardType MasterCard = new(3, nameof(MasterCard));
+            
+                 public CardType(int id, string name) : base(id, name) { }
+             }
+             </code></td></tr><tr><td><a href="T_Suresking_Utility_EnumExtensions.htm">EnumExtensions</a></td><td>
+            枚举扩展方法：提供枚举值与自定义字符串、整数值之间的转换。
+            通过 [Description] 特性定义枚举值对应的字符串映射。
+            如果未指定 [Description]，则回退到枚举名称的全小写形式。
+            </td></tr><tr><td><a href="T_Suresking_Utility_EnumItem_1.htm">EnumItem<span id="LSTDA76DA5B_7" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TEnum<span id="LSTDA76DA5B_8" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a></td><td>
+             枚举项包装类：用于在 UI（如 ComboBox）中显示枚举的 Description 文本，
+             同时保留原始枚举值。
+             <p>
+             显示文本由 <a href="M_Suresking_Utility_EnumExtensions_ToDescription__1.htm">ToDescription<span id="LSTDA76DA5B_9" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>TEnum<span id="LSTDA76DA5B_10" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>(TEnum)</a> 生成：
+             优先使用 [Description] 特性指定的字符串，未指定时返回枚举名称的全小写形式。
+             </p></td></tr><tr><td><a href="T_Suresking_Utility_ExcelReadHelper.htm">ExcelReadHelper</a></td><td>
+            异步 Excel 读取扩展分部 - 支持大文件和多 Sheet 的流式读取
+            </td></tr><tr><td><a href="T_Suresking_Utility_GenericCache_2.htm">GenericCache<span id="LSTDA76DA5B_11" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TKey, TValue<span id="LSTDA76DA5B_12" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a></td><td>
+            提供泛型静态缓存功能
+            支持多线程并发访问
+            注意：不同的泛型参数类型会生成完全独立的缓存实例
+            </td></tr><tr><td><a href="T_Suresking_Utility_HisCodePositionPair.htm">HisCodePositionPair</a></td><td>
+            表示医院 HIS 系统编码（HisCode）与其排序序号（Position）的配对关系。
+            </td></tr><tr><td><a href="T_Suresking_Utility_HisConfig.htm">HisConfig</a></td><td>
+            HIS配置基类
+            <p>采用字典存储"文件名类"配置项；<a href="P_Suresking_Utility_HisConfig_HisExportRoot.htm">HisExportRoot</a>、<a href="P_Suresking_Utility_HisConfig_HtmlExportRoot.htm">HtmlExportRoot</a>、
+            <a href="P_Suresking_Utility_HisConfig_NetDataRoot.htm">NetDataRoot</a>、<a href="P_Suresking_Utility_HisConfig_DebugMode.htm">DebugMode</a> 为独立属性，不进入字典</p></td></tr><tr><td><a href="T_Suresking_Utility_HisConfigKeys.htm">HisConfigKeys</a></td><td>
+            HIS 配置项的合法 Key 常量
+            <p>供以 key 为参数的配置查询方法使用，避免硬编码字符串</p></td></tr><tr><td><a href="T_Suresking_Utility_InitializableViewModelBase.htm">InitializableViewModelBase</a></td><td>
+            提供支持异步初始化的 ViewModel 基类。
+            <p>继承自 <span class="noLink">ObservableObject</span>，实现 <a href="T_Suresking_Utility_IInitializable.htm">IInitializable</a> 接口，</p><p>适用于需要在访问时既要构造函数又要异步初始化的场景。</p></td></tr><tr><td><a href="T_Suresking_Utility_IoHelper.htm">IoHelper</a></td><td>
+            输入输出的帮助类
+            提供文件、目录的常用操作，包括读写、复制、移动、删除、加密校验等功能
+            所有可能失败的操作均返回 ResultStatus，包含成功状态和错误信息
+            </td></tr><tr><td><a href="T_Suresking_Utility_LoggerHelper.htm">LoggerHelper</a></td><td>
+            单文件静态日志类。
+            支持控制台和文件输出，支持日志级别和滚动文件。
+            采用异步队列写入方式，避免日志操作阻塞业务线程。
+            通过 <a href="https://learn.microsoft.com/dotnet/api/system.runtime.compilerservices.callermembernameattribute" target="_blank" rel="noopener noreferrer">CallerMemberNameAttribute</a>、<a href="https://learn.microsoft.com/dotnet/api/system.runtime.compilerservices.callerfilepathattribute" target="_blank" rel="noopener noreferrer">CallerFilePathAttribute</a>、
+            <a href="https://learn.microsoft.com/dotnet/api/system.runtime.compilerservices.callerlinenumberattribute" target="_blank" rel="noopener noreferrer">CallerLineNumberAttribute</a> 自动捕获调用者信息。
+            </td></tr><tr><td><a href="T_Suresking_Utility_LunarHelper.htm">LunarHelper</a></td><td>
+            公历与农历日期转换静态工具类
+            支持年份范围：1900年-2049年
+            提供公历日期到农历日期、干支、生肖、节气等信息的完整转换
+            <code>
+              // 获取当前日期农历信息
+              var todayInfo = LunarConverter.GetCurrentLunarDateInfo();
+              Console.WriteLine($"今天：{todayInfo.FullInfo}");
+              // 获取特定日期信息
+              var dateInfo = LunarConverter.GetLunarDateInfo(new DateTime(2026, 3, 31));
+              Console.WriteLine($"指定日期：{dateInfo.FullInfo}");
+            </code></td></tr><tr><td><a href="T_Suresking_Utility_Md5Helper.htm">Md5Helper</a></td><td>
+            简单 MD5 加密（散列）工具类。
+            </td></tr><tr><td><a href="T_Suresking_Utility_NetHelper.htm">NetHelper</a></td><td>
+            提供网络操作的工具方法，包括 HTTP 请求、文件下载、网络检测、IP 验证等。
+            </td></tr><tr><td><a href="T_Suresking_Utility_Notice.htm">Notice</a></td><td>
+            表示一条通信消息，由消息类型、标题文本、消息文本和附加内容组成。
+            </td></tr><tr><td><a href="T_Suresking_Utility_PinYinExtension.htm">PinYinExtension</a></td><td>
+            拼音扩展方法，提供字符串转拼音首字母的功能
+            </td></tr><tr><td><a href="T_Suresking_Utility_PowerShellHelper.htm">PowerShellHelper</a></td><td>
+             提供执行 Windows PowerShell 5.1 脚本的方法。
+             </td></tr><tr><td><a href="T_Suresking_Utility_PowerShellHelper_PsResult.htm">PowerShellHelper<span id="LSTDA76DA5B_13" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>PsResult</a></td><td>
+            表示脚本执行结果。
+            </td></tr><tr><td><a href="T_Suresking_Utility_ProgressExtensions.htm">ProgressExtensions</a></td><td>
+             提供 <a href="https://learn.microsoft.com/dotnet/api/system.iprogress-1" target="_blank" rel="noopener noreferrer">IProgress<span id="LSTDA76DA5B_14" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LSTDA76DA5B_15" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> 的扩展方法，用于进度报告的格式转换。
+             <p>
+             典型用途：库层（Library）对外暴露 <a href="https://learn.microsoft.com/dotnet/api/system.iprogress-1" target="_blank" rel="noopener noreferrer">IProgress<span id="LSTDA76DA5B_16" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LSTDA76DA5B_17" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> 数值型进度（如 <span class="code">IProgress&lt;int&gt;</span>、
+             <span class="code">IProgress&lt;double&gt;</span>），而 Service 层或 UI 层希望直接接收已格式化的字符串进度
+             （如 <span class="code">IProgress&lt;string&gt;</span> 用于直接显示到状态栏/日志）。
+             本类通过适配器把数值进度自动转换为带前后缀、可自定义格式的字符串进度。
+             </p><p>
+             所有方法均支持<b>可空进度报告器</b>：当传入的 <a href="https://learn.microsoft.com/dotnet/api/system.iprogress-1" target="_blank" rel="noopener noreferrer">IProgress<span id="LSTDA76DA5B_18" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LSTDA76DA5B_19" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> 为 <span class="code">null</span> 时返回 <span class="code">null</span>，
+             便于在"调用方不关心进度"的场景下直接透传而不产生额外分配。
+             </p></td></tr><tr><td><a href="T_Suresking_Utility_RegexHelper.htm">RegexHelper</a></td><td>
+             正则表达式帮助类，提供高性能的缓存编译功能。
+             对于频繁使用的正则表达式模式，会自动缓存编译后的实例以提升性能。
+             对于一次性使用的模式，提供静态方法直接调用。
+             所有正则操作均设置超时保护，防止 ReDoS 攻击。
+             </td></tr><tr><td><a href="T_Suresking_Utility_RsaHelper.htm">RsaHelper</a></td><td>
+            RSA 非对称加密工具类。
+            </td></tr><tr><td><a href="T_Suresking_Utility_ServiceRegistrar.htm">ServiceRegistrar</a></td><td>
+            容器组装入口（类库侧）。
+            <p>
+            职责：扫描宿主程序集中的 ViewModel / View，构建视图名称映射，注册到 IoC 容器，
+            并通过回调允许宿主注册自己的服务和主窗口。
+            </p><p><b>不依赖宿主</b>：本类不引用 <span class="code">App</span>、<span class="code">MainWindow</span> 等宿主类型，
+            宿主程序集通过 <a href="M_Suresking_Utility_ServiceRegistrar_RegisterServices.htm">RegisterServices(Assembly, Action<span id="LSTDA76DA5B_20" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>IContainer<span id="LSTDA76DA5B_21" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a> 参数传入，
+            宿主专属服务通过 <span class="code">configureServices</span> 回调注册。
+            </p><p><b>一次注册，全局可用</b>：<a href="M_Suresking_Utility_ServiceRegistrar_RegisterServices.htm">RegisterServices(Assembly, Action<span id="LSTDA76DA5B_22" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>IContainer<span id="LSTDA76DA5B_23" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a> 在首次调用时完成扫描与注册，
+            之后 <a href="M_Suresking_Utility_ServiceRegistrar_GetContainer.htm">GetContainer<span id="LSTDA76DA5B_24" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a> 和 <a href="M_Suresking_Utility_ServiceRegistrar_GetView.htm">GetView(String)</a> 拿到的都是已注册完成的容器，
+            不会出现"类型未注册"的解析异常。重复调用 <a href="M_Suresking_Utility_ServiceRegistrar_RegisterServices.htm">RegisterServices(Assembly, Action<span id="LSTDA76DA5B_25" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>IContainer<span id="LSTDA76DA5B_26" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a> 直接返回已有容器。
+            </p></td></tr><tr><td><a href="T_Suresking_Utility_SheetInfo.htm">SheetInfo</a></td><td>
+            Sheet 信息
+            </td></tr><tr><td><a href="T_Suresking_Utility_SimpleExcelWriter.htm">SimpleExcelWriter</a></td><td>
+            不依赖任何 NuGet 包的极简 XLSX 写入器。
+            字体 微软雅黑 11，固定行高、垂直居中、统一缺省列宽。
+            数字类型输出为数值单元格（可计算），DateTime 统一格式化为 yyyy-MM-dd 文本，其余输出为文本。
+            支持：DataTable、List&lt;T&gt;、手动 AddRow，以及合并单元格（可水平居中）、全边框开关。
+            仅支持单工作表，适用于 .NET 6+。
+            </td></tr><tr><td><a href="T_Suresking_Utility_Singleton_1.htm">Singleton<span id="LSTDA76DA5B_27" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TEntity<span id="LSTDA76DA5B_28" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a></td><td>
+            泛型单例基类，为派生类提供线程安全的单例模式实现。
+            </td></tr><tr><td><a href="T_Suresking_Utility_SingletonBase_1.htm">SingletonBase<span id="LSTDA76DA5B_29" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LSTDA76DA5B_30" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a></td><td>
+            线程安全、防反射、防序列化的单例抽象基类（.NET 6+ 版本）
+            <p>使用 Lazy&lt;T&gt; 实现延迟初始化和线程安全；并可以重写OnInstanceCreated自定义初始化逻辑</p></td></tr><tr><td><a href="T_Suresking_Utility_StrHelper.htm">StrHelper</a></td><td>
+            字符串辅助类，提供系统环境信息访问及常用字符串处理函数。
+            <p>只读属性 Author MyDocuments UserProfile Version HostVersion</p><p>处理函数 ShowMessage ShowWarningMessage GetFolderPath TryExportFile TryExportFileWithDetail
+            OpenDialogGetFileName OpenDialogGetFileNames GenerateRandomString</p><p>以及将字符串转换为指定类型的 To&lt;T&gt; TryTo&lt;T&gt; 和若干明确目标的 ToInt ToDateTime 等等</p></td></tr><tr><td><a href="T_Suresking_Utility_StringBuilderExtensions.htm">StringBuilderExtensions</a></td><td>
+            StringBuilder 扩展方法类
+            </td></tr><tr><td><a href="T_Suresking_Utility_StringExtension.htm">StringExtension</a></td><td>
+            对 string 的一些功能扩展方法。
+            </td></tr><tr><td><a href="T_Suresking_Utility_Student.htm">Student</a></td><td>
+            用于测试的Student类
+            包含常见的属性和方法示例
+            </td></tr><tr><td><a href="T_Suresking_Utility_StudentDataGenerator.htm">StudentDataGenerator</a></td><td>
+            测试用学生数据生成类
+            </td></tr><tr><td><a href="T_Suresking_Utility_StudentExtensions.htm">StudentExtensions</a></td><td>
+            包含静态方法和扩展方法的示例
+            </td></tr><tr><td><a href="T_Suresking_Utility_SuresKingViewAttribute.htm">SuresKingViewAttribute</a></td><td>
+            标记一个类是「可被 IoC 容器批量注册的 View」。
+            <p>
+            启动时扫描程序集，凡是带有此特性的类都会被批量注册到 DryIoc 容器中。
+            由于 View 通常需要按具体类型解析（而不是按某个公共接口），
+            注册时使用具体类型本身作为服务类型，而不是映射到某个接口。
+            </p><p>
+            使用方式：
+            <code>
+            [SuresKingView]
+            public partial class GithubView : UserControl { }
+            </code></p><p>
+            为什么用特性而不是空标记接口（如 IView）：
+            特性不占用类型名，不会与其他类库中常见的 IView 等名称产生 using 歧义；
+            同时语义上更贴合「标记」，不强制被标记类继承或实现任何东西。
+            </p></td></tr><tr><td><a href="T_Suresking_Utility_SuresKingViewModelAttribute.htm">SuresKingViewModelAttribute</a></td><td>
+            标记一个类是「可被 IoC 容器批量注册的 ViewModel」。
+            <p>
+            启动时扫描程序集，凡是带有此特性的类都会被批量注册到 DryIoc 容器中。
+            ViewModel 一般通过构造函数注入到对应的 View 中，
+            因此注册时同样以具体类型作为服务类型即可；
+            除非存在「按接口/基类注入」的需求，否则不需要额外的接口映射。
+            </p><p>
+            使用方式：
+            <code>
+            [SuresKingViewModel]
+            public class GithubViewModel : ObservableObject { }
+            </code></p><p>
+            与 <a href="T_Suresking_Utility_SuresKingViewAttribute.htm">SuresKingViewAttribute</a> 分开定义，
+            是为了让 View 和 ViewModel 可以独立扫描、独立注册，
+            避免把两类职责不同的类型混在同一个筛选条件里。
+            </p></td></tr><tr><td><a href="T_Suresking_Utility_Template.htm">Template</a></td><td>
+            一个简单的字符串模板引擎，支持变量替换和链式调用。
+            </td></tr><tr><td><a href="T_Suresking_Utility_UrlInfo.htm">UrlInfo</a></td><td>
+            URL解析结果。
+            </td></tr><tr><td><a href="T_Suresking_Utility_UrlParserHelper.htm">UrlParserHelper</a></td><td>
+            网址解析类。
+            </td></tr><tr><td><a href="T_Suresking_Utility_XmlHelper.htm">XmlHelper</a></td><td>
+            XML 序列化和反序列化异步辅助类。
+            提供对象与 XML 字符串/文件之间的异步转换功能。
+            </td></tr><tr><td><a href="T_Suresking_Utility_ZipHelper.htm">ZipHelper</a></td><td>
+            提供文件和目录的压缩与解压缩功能的工具类。
+            </td></tr></table></div><h2 class="quickLinkHeader">结构</h2><div id="IDWCASection"><table id="structureList" class="table is-hoverable"><tr><td><a href="T_Suresking_Utility_LunarHelper_DateFullInfo.htm">LunarHelper<span id="LSTDA76DA5B_31" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>DateFullInfo</a></td><td>
+            完整的日期信息结构，包含公历、农历、干支、生肖、节气及格式化字符串
+            </td></tr><tr><td><a href="T_Suresking_Utility_ReplacePair.htm">ReplacePair</a></td><td>
+            拟进行字符串替换的旧新值对
+            </td></tr><tr><td><a href="T_Suresking_Utility_ResultStatus.htm">ResultStatus</a></td><td>
+            包含是否成功和对应提示信息的返回值结构
+            </td></tr></table></div><h2 class="quickLinkHeader">接口</h2><div id="ID0EB0CASection"><table id="interfaceList" class="table is-hoverable"><tr><td><a href="T_Suresking_Utility_IFtpConfig.htm">IFtpConfig</a></td><td>
+            规范ftp服务端配置信息
+            <p>
+            包括四个属性：FtpSiteName、 FtpHostAddr、 FtpUserName、 FtpPassword
+            </p></td></tr><tr><td><a href="T_Suresking_Utility_IHisConfig.htm">IHisConfig</a></td><td>
+            HIS系统配置接口
+            <p>定义所有配置属性和辅助方法</p></td></tr><tr><td><a href="T_Suresking_Utility_IInitializable.htm">IInitializable</a></td><td>
+            支持按需初始化的 ViewModel 接口。
+            提供初始化状态跟踪和重复初始化保护。
+            </td></tr></table></div><h2 class="quickLinkHeader">枚举</h2><div id="IDGCASection"><table id="enumerationList" class="table is-hoverable"><tr><td><a href="T_Suresking_Utility_AuthorizationHelper_DelayMode.htm">AuthorizationHelper<span id="LSTDA76DA5B_32" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>DelayMode</a></td><td>延迟方式。</td></tr><tr><td><a href="T_Suresking_Utility_AuthorizationType.htm">AuthorizationType</a></td><td>
+            权限认证的结果。
+            </td></tr><tr><td><a href="T_Suresking_Utility_DrugType.htm">DrugType</a></td><td>
+            药物的顶级分类 饮片=1 颗粒=2 西药=3
+            </td></tr><tr><td><a href="T_Suresking_Utility_IconType.htm">IconType</a></td><td>
+            图标的类型，Info一般提示，Alert警告
+            </td></tr><tr><td><a href="T_Suresking_Utility_LoggerHelper_LogLevel.htm">LoggerHelper<span id="LSTDA76DA5B_33" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>LogLevel</a></td><td>
+            日志级别枚举，数值越大级别越高。
+            只有大于等于当前设置级别的日志才会被记录。
+            </td></tr><tr><td><a href="T_Suresking_Utility_NoticeType.htm">NoticeType</a></td><td>
+            通知消息的类型，用于标识 <a href="T_Suresking_Utility_Notice.htm">Notice</a> 实例的内容形态和语义。
+            </td></tr></table></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">类</a></li><li><a class="quickLink">示例</a></li><li><a class="quickLink">结构</a></li><li><a class="quickLink">接口</a></li><li><a class="quickLink">枚举</a></li></ul></nav></div></div></article></main><script>$(function(){
+SetDefaultLanguage("cs");
+LoadToc();
+InitializeQuickLinks();
+hljs.highlightAll();
+});</script></body></html>

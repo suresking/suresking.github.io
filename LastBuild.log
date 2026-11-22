@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2026.3.29.0" projectFile="P:\gitee\ApiHtml\SureskingUtility.shfbproj" started="2026/11/22 20:39:36">
+<buildStep step="Initializing">
+The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder&#39;
+Locating components in the following folder(s):
+    P:\gitee\ApiHtml
+    C:\ProgramData\EWSoftware\Sandcastle Help File Builder\Components and Plug-Ins
+    C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components
+Using framework reflection data for &#39;.NET Core/.NET Standard/.NET 5.0+&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NET&#39;
+Using presentation style &#39;Themed2026&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026&#39;
+Loading and initializing plug-ins...
+Assembly Binding Redirection Version 2026.3.29.0
+Copyright &#169; 2006-2026, Eric Woodruff, All Rights Reserved
+Documented Entities Only Version 2026.3.29.0
+Copyright &#169; 2006-2026, Eric Woodruff, All Rights Reserved
+Compact Table of Contents Generator Version 2026.3.29.0
+Copyright &#169; 2006-2026, Eric Woodruff, All Rights Reserved
+-------------------------------
+Clearing any prior web/markdown output...
+</buildStep>
+<buildStep step="ValidatingDocumentationSources">
+Validating and copying documentation source information
+Source: P:\gitee\ApiHtml\Suresking.Utility.dll
+    Found assembly &#39;P:\gitee\ApiHtml\Suresking.Utility.dll&#39;
+Source: P:\gitee\ApiHtml\Suresking.Utility.xml
+Source: P:\gitee\ApiHtml\Suresking.DryIoc.dll
+    Found assembly &#39;P:\gitee\ApiHtml\Suresking.DryIoc.dll&#39;
+Source: P:\gitee\ApiHtml\Suresking.Encodings.dll
+    Found assembly &#39;P:\gitee\ApiHtml\Suresking.Encodings.dll&#39;
+Source: P:\gitee\ApiHtml\Suresking.ExcelDataReader.dll
+    Found assembly &#39;P:\gitee\ApiHtml\Suresking.ExcelDataReader.dll&#39;
+Source: P:\gitee\ApiHtml\Suresking.Mvvm.dll
+    Found assembly &#39;P:\gitee\ApiHtml\Suresking.Mvvm.dll&#39;
+
+Copying XML comments files
+    P:\gitee\ApiHtml\Suresking.Utility.xml -&gt; P:\gitee\ApiHtml\Help\Working\Suresking.Utility.xml
+</buildStep>
+<buildStep step="GenerateSharedContent">
+Generating shared content files (zh-CN, 中文(简体，中国))...
+    Last step completed in 00:00:00.0123
+</buildStep>
+<buildStep step="GenerateApiFilter">
+Generating API filter for MRefBuilder...
+    Last step completed in 00:00:00.0034
+</buildStep>
+<buildStep step="GenerateReflectionInfo">
+Generating reflection information...
+<plugIn name="Documented Entities Only" behavior="Before" priority="-2147483648">
+Removing any API filter defined in the project...
+</plugIn><plugIn name="Assembly Binding Redirection" behavior="Before" priority="1000">
+Adding ignored assembly names to assembly resolver configuration:
+    BusinessObjects.Licensing.KeycodeDecoder
+    Microsoft.VisualStudio.TestTools.UITest.Playback
+    Suresking.Mvvm
+    Suresking.Epplus
+    Suresking.Encodings
+    Suresking.ExcelDataReader
+    Suresking.Iocs
+</plugIn>[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-59d8279c-6a51-4d8c-b911-fc426f9b7265.proj]
+鐢熸垚鍚姩鏃堕棿涓?2026/11/22 20:39:37銆?
+
+鑺傜偣 1 涓婄殑椤圭洰鈥淧:\gitee\ApiHtml\Help\Working\GenerateRefInfo-59d8279c-6a51-4d8c-b911-fc426f9b7265.proj鈥?榛樿鐩爣)銆?
+PrepareForBuild:
+  姝ｅ湪鍒涘缓鐩綍鈥渙bj\Debug\鈥濄€?
+GenerateRefInfo:
+  Microsoft.Build (v17.14.60+43b6357182b0684725151b8234813163afeea20e)
+  漏 Microsoft Corporation. All rights reserved.
+  No source code context base path specified.  Source context information is unavailable.
+  Loaded 5 assemblies for reflection and 1 dependency assemblies.
+  Using framework redirect &#39;System.ComponentModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.ComponentModel, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Diagnostics.StackTrace, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Diagnostics.StackTrace, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Collections, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Collections, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Reflection.Emit.ILGeneration, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Reflection.Emit.ILGeneration, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Linq.Expressions, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Linq.Expressions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Threading, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Threading, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Reflection.Primitives, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Reflection.Primitives, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Text.RegularExpressions, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Text.RegularExpressions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Data.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Data.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Security.Cryptography, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Security.Cryptography, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.ComponentModel.TypeConverter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.ComponentModel.TypeConverter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.ComponentModel.Primitives, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.ComponentModel.Primitives, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.ComponentModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.ComponentModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Xml.ReaderWriter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Xml.ReaderWriter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Xml.ReaderWriter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Xml.ReaderWriter, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.IO.Compression, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#39; in place of &#39;System.IO.Compression, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#39;
+  Using framework redirect &#39;System.ObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.ObjectModel, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Linq, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Linq, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.ComponentModel.Annotations, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.ComponentModel.Annotations, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Collections.Concurrent, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Collections.Concurrent, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Diagnostics.Process, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Diagnostics.Process, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Threading.Thread, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Threading.Thread, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Net.Http, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Net.Http, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Net.Ping, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Net.Ping, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Text.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51&#39; in place of &#39;System.Text.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51&#39;
+  Using framework redirect &#39;PresentationFramework, Version=11.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35&#39; in place of &#39;PresentationFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35&#39;
+  Using framework redirect &#39;PresentationCore, Version=11.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35&#39; in place of &#39;PresentationCore, Version=11.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35&#39;
+  Using framework redirect &#39;WindowsBase, Version=11.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35&#39; in place of &#39;WindowsBase, Version=11.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35&#39;
+  Using framework redirect &#39;System.Xaml, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#39; in place of &#39;System.Xaml, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#39;
+  Using framework redirect &#39;System.Collections, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Collections, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Wrote information on 55 namespaces, 705 types, and 4385 members
+  Merging duplicate type and member information
+  Merged 0 duplicate type(s) and 0 duplicate member(s)
+宸插畬鎴愮敓鎴愰」鐩€淧:\gitee\ApiHtml\Help\Working\GenerateRefInfo-59d8279c-6a51-4d8c-b911-fc426f9b7265.proj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+<plugIn name="Documented Entities Only" behavior="After" priority="2147483647">
+Determining the documentation state of members in the documented assemblies...
+Building API filter based on the XML comments members...
+Regenerating reflection information based on the documented members API filter...
+[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - P:\gitee\ApiHtml\Help\Working\GenerateRefInfo-59d8279c-6a51-4d8c-b911-fc426f9b7265.proj]
+鐢熸垚鍚姩鏃堕棿涓?2026/11/22 20:39:38銆?
+
+鑺傜偣 1 涓婄殑椤圭洰鈥淧:\gitee\ApiHtml\Help\Working\GenerateRefInfo-59d8279c-6a51-4d8c-b911-fc426f9b7265.proj鈥?榛樿鐩爣)銆?
+GenerateRefInfo:
+  Microsoft.Build (v17.14.60+43b6357182b0684725151b8234813163afeea20e)
+  漏 Microsoft Corporation. All rights reserved.
+  No source code context base path specified.  Source context information is unavailable.
+  Loaded 5 assemblies for reflection and 1 dependency assemblies.
+  Using framework redirect &#39;System.ComponentModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.ComponentModel, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Diagnostics.StackTrace, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Diagnostics.StackTrace, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Collections, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Collections, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Reflection.Emit.ILGeneration, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Reflection.Emit.ILGeneration, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Linq.Expressions, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Linq.Expressions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Threading, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Threading, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Reflection.Primitives, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Reflection.Primitives, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Text.RegularExpressions, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Text.RegularExpressions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Data.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Data.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Security.Cryptography, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Security.Cryptography, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.ComponentModel.TypeConverter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.ComponentModel.TypeConverter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.ComponentModel.Primitives, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.ComponentModel.Primitives, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.ComponentModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.ComponentModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Xml.ReaderWriter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Xml.ReaderWriter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Xml.ReaderWriter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Xml.ReaderWriter, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.IO.Compression, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#39; in place of &#39;System.IO.Compression, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#39;
+  Using framework redirect &#39;System.ObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.ObjectModel, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Linq, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Linq, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.ComponentModel.Annotations, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.ComponentModel.Annotations, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Collections.Concurrent, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Collections.Concurrent, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Diagnostics.Process, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Diagnostics.Process, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Threading.Thread, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Threading.Thread, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Net.Http, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Net.Http, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Net.Ping, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Net.Ping, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Text.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51&#39; in place of &#39;System.Text.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51&#39;
+  Using framework redirect &#39;PresentationFramework, Version=11.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35&#39; in place of &#39;PresentationFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35&#39;
+  Using framework redirect &#39;PresentationCore, Version=11.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35&#39; in place of &#39;PresentationCore, Version=11.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35&#39;
+  Using framework redirect &#39;WindowsBase, Version=11.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35&#39; in place of &#39;WindowsBase, Version=11.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35&#39;
+  Using framework redirect &#39;System.Xaml, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#39; in place of &#39;System.Xaml, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#39;
+  Wrote information on 1 namespaces, 64 types, and 607 members
+  Merging duplicate type and member information
+  Merged 0 duplicate type(s) and 0 duplicate member(s)
+宸插畬鎴愮敓鎴愰」鐩€淧:\gitee\ApiHtml\Help\Working\GenerateRefInfo-59d8279c-6a51-4d8c-b911-fc426f9b7265.proj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+</plugIn>    Last step completed in 00:00:02.0801
+</buildStep>
+<buildStep step="ApplyDocumentModel">
+Applying document model to reflection output...
+    Last step completed in 00:00:00.0381
+</buildStep>
+<buildStep step="AddApiTopicFilenames">
+Adding topic filenames to API members...
+    Unique name M_Suresking_Utility_AesHelper_Decrypt_1 generated for M:Suresking.Utility.AesHelper.Decrypt(System.String,System.String)
+    Unique name M_Suresking_Utility_CopyDirectoryOptions_WithExcludeDirPatterns_1 generated for M:Suresking.Utility.CopyDirectoryOptions.WithExcludeDirPatterns(System.String[])
+    Unique name M_Suresking_Utility_CopyDirectoryOptions_WithExcludeExtensions_1 generated for M:Suresking.Utility.CopyDirectoryOptions.WithExcludeExtensions(System.String[])
+    Unique name M_Suresking_Utility_CopyDirectoryOptions_WithExcludeFilePatterns_1 generated for M:Suresking.Utility.CopyDirectoryOptions.WithExcludeFilePatterns(System.String[])
+    Unique name M_Suresking_Utility_CopyDirectoryOptions_WithIncludeExtensions_1 generated for M:Suresking.Utility.CopyDirectoryOptions.WithIncludeExtensions(System.String[])
+    Unique name M_Suresking_Utility_CopyDirectoryOptions_WithReplacePairs_1 generated for M:Suresking.Utility.CopyDirectoryOptions.WithReplacePairs(System.Collections.Generic.IEnumerable{Suresking.Utility.ReplacePair})
+    Unique name M_Suresking_Utility_Enumeration_CompareTo_1 generated for M:Suresking.Utility.Enumeration.CompareTo(System.Object)
+    Unique name M_Suresking_Utility_Enumeration_Equals_1 generated for M:Suresking.Utility.Enumeration.Equals(System.Object)
+    Unique name M_Suresking_Utility_GenericCache_2_AddOrUpdate_1 generated for M:Suresking.Utility.GenericCache`2.AddOrUpdate(`0,`1)
+    Unique name M_Suresking_Utility_GenericCache_2_GetOrCreate_1 generated for M:Suresking.Utility.GenericCache`2.GetOrCreate(`0,System.Func{`0,`1})
+    Unique name M_Suresking_Utility_GenericCache_2_GetOrCreateAsync_1 generated for M:Suresking.Utility.GenericCache`2.GetOrCreateAsync(`0,System.Func{`0,System.Threading.Tasks.Task{`1}})
+    Unique name M_Suresking_Utility_GenericCache_2_Remove_1 generated for M:Suresking.Utility.GenericCache`2.Remove(`0,`1@)
+    Unique name M_Suresking_Utility_IoHelper_CheckAllFilesExist_1 generated for M:Suresking.Utility.IoHelper.CheckAllFilesExist(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.List{System.String}@)
+    Unique name M_Suresking_Utility_LoggerHelper_Critical_1 generated for M:Suresking.Utility.LoggerHelper.Critical(System.String,System.String,System.String,System.Int32)
+    Unique name M_Suresking_Utility_LoggerHelper_Error_1 generated for M:Suresking.Utility.LoggerHelper.Error(System.String,System.String,System.String,System.Int32)
+    Unique name M_Suresking_Utility_SimpleExcelWriter_AddMerge_1 generated for M:Suresking.Utility.SimpleExcelWriter.AddMerge(System.String,System.Boolean)
+    Unique name M_Suresking_Utility_SimpleExcelWriter_AddRowAt_1 generated for M:Suresking.Utility.SimpleExcelWriter.AddRowAt(System.Int32,System.String[])
+    Unique name M_Suresking_Utility_SimpleExcelWriter_Save_1 generated for M:Suresking.Utility.SimpleExcelWriter.Save(System.String)
+    Unique name M_Suresking_Utility_SingletonBase_1__ctor_1 generated for M:Suresking.Utility.SingletonBase`1.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    Unique name M_Suresking_Utility_StrHelper_ToList__1_1 generated for M:Suresking.Utility.StrHelper.ToList``1(System.String,System.Char,``0)
+    Unique name M_Suresking_Utility_StringBuilderExtensions_ToDataTable_1 generated for M:Suresking.Utility.StringBuilderExtensions.ToDataTable(System.Text.StringBuilder,System.String,System.Boolean,System.String,System.Boolean)
+    Unique name M_Suresking_Utility_Student__ctor_1 generated for M:Suresking.Utility.Student.#ctor(System.Int32,System.String,System.Int32)
+    Unique name M_Suresking_Utility_Student__ctor_2 generated for M:Suresking.Utility.Student.#ctor(System.Int32,System.String,System.Int32,System.String,System.String,System.Double)
+    Unique name M_Suresking_Utility_XmlHelper_DeserializeFromXmlFile__1_1 generated for M:Suresking.Utility.XmlHelper.DeserializeFromXmlFile``1(System.String,System.Nullable{``0})
+    Unique name M_Suresking_Utility_XmlHelper_DeserializeFromXmlFileAsync__1_1 generated for M:Suresking.Utility.XmlHelper.DeserializeFromXmlFileAsync``1(System.String,System.Threading.CancellationToken)
+    Unique name M_Suresking_Utility_XmlHelper_DeserializeFromXmlString__1_1 generated for M:Suresking.Utility.XmlHelper.DeserializeFromXmlString``1(System.String,System.Nullable{``0})
+    Last step completed in 00:00:00.0104
+</buildStep>
+<buildStep step="GenerateApiTopicManifest">
+Generating API topic manifest...
+    Last step completed in 00:00:00.0189
+</buildStep>
+<buildStep step="GenerateNamespaceSummaries">
+Generating namespace summary information...
+    Last step completed in 00:00:00.0123
+</buildStep>
+<buildStep step="GenerateInheritedDocumentation">
+Generating inherited documentation...
+Reflection information will be retrieved from &#39;P:\gitee\ApiHtml\Help\Working\reflection.xml&#39;
+Indexing C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\11.0.0\ref\net11.0\*.xml
+Indexing C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\11.0.0\ref\net11.0\*.xml
+Indexing C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\11.0.0\ref\net11.0\*.xml
+Indexing P:\gitee\ApiHtml\Help\Working\Suresking.Utility.xml
+Indexed 138985 members in 524 file(s).  1 file(s) to scan for &lt;inheritdoc /&gt; tags.
+Merging inherited documentation...
+
+Documentation merged successfully.  Merged comments were saved in &#39;P:\gitee\ApiHtml\Help\Working\_InheritedDocs_.xml&#39;.
+    Last step completed in 00:00:01.3292
+</buildStep>
+<buildStep step="CopyAdditionalContent">
+Copying additional content files...
+No additional content to copy
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="MergeTablesOfContents">
+Merging conceptual and additional tables of contents...
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="GenerateIntermediateTableOfContents">
+Generating intermediate table of contents file for API content...
+Generating conceptual content intermediate TOC file...
+    Last step completed in 00:00:00.0315
+</buildStep>
+<buildStep step="CreateBuildAssemblerConfigs">
+Creating Sandcastle configuration files...
+    Last step completed in 00:00:00.2082
+</buildStep>
+<buildStep step="CombiningIntermediateTocFiles">
+Combining conceptual and API intermediate TOC files...
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="MergeCustomConfigs">
+Merging custom build component configurations
+P:\gitee\ApiHtml\Help\Working\BuildAssembler.config
+  Updating reference topic configurations.
+  No conceptual content.  Removing conceptual content components.
+    Last step completed in 00:00:00.0131
+</buildStep>
+<buildStep step="BuildTopics">
+Building help topics...
+<plugIn name="Compact Table of Contents Generator" behavior="Before" priority="1000">
+Loading table of contents info for client-side TOC
+</plugIn>Loading configuration...
+Processing topics...
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [N:Suresking.Utility] Unknown reference link target &#39;T:Suresking.Mvvm.ObservableObject&#39;.
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.Create] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithDirNameTransform(System.Func{System.String,System.String})] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithDirNameTransform(System.Func{System.String,System.String})] Missing &lt;param name=&quot;transform&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithExcludeDirPatterns(System.Collections.Generic.IEnumerable{System.String})] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithExcludeDirPatterns(System.Collections.Generic.IEnumerable{System.String})] Missing &lt;param name=&quot;patterns&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithExcludeDirPatterns(System.String[])] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithExcludeDirPatterns(System.String[])] Missing &lt;param name=&quot;patterns&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithExcludeExtensions(System.Collections.Generic.IEnumerable{System.String})] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithExcludeExtensions(System.Collections.Generic.IEnumerable{System.String})] Missing &lt;param name=&quot;extensions&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithExcludeExtensions(System.String[])] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithExcludeExtensions(System.String[])] Missing &lt;param name=&quot;extensions&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithExcludeFilePatterns(System.Collections.Generic.IEnumerable{System.String})] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithExcludeFilePatterns(System.Collections.Generic.IEnumerable{System.String})] Missing &lt;param name=&quot;patterns&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithExcludeFilePatterns(System.String[])] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithExcludeFilePatterns(System.String[])] Missing &lt;param name=&quot;patterns&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithFileNameTransform(System.Func{System.String,System.String})] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithFileNameTransform(System.Func{System.String,System.String})] Missing &lt;param name=&quot;transform&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithIncludeExtensions(System.Collections.Generic.IEnumerable{System.String})] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithIncludeExtensions(System.Collections.Generic.IEnumerable{System.String})] Missing &lt;param name=&quot;extensions&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithIncludeExtensions(System.String[])] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithIncludeExtensions(System.String[])] Missing &lt;param name=&quot;extensions&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithReplacePair(System.String,System.String)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithReplacePair(System.String,System.String)] Missing &lt;param name=&quot;oldValue&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithReplacePair(System.String,System.String)] Missing &lt;param name=&quot;newValue&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithReplacePairs(Suresking.Utility.ReplacePair[])] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithReplacePairs(Suresking.Utility.ReplacePair[])] Missing &lt;param name=&quot;pairs&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithReplacePairs(System.Collections.Generic.IEnumerable{Suresking.Utility.ReplacePair})] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.CopyDirectoryOptions.WithReplacePairs(System.Collections.Generic.IEnumerable{Suresking.Utility.ReplacePair})] Missing &lt;param name=&quot;pairs&quot;/&gt; documentation
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [T:Suresking.Utility.EncodingHelper] Unknown reference link target &#39;M:Suresking.Utility.EncodingHelper.DecodeBytes(System.Byte[])&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [Methods.T:Suresking.Utility.EncodingHelper] Unknown reference link target &#39;M:Suresking.Utility.EncodingHelper.DecodeBytes(System.Byte[])&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Suresking.Utility.EncodingHelper.ReadFileWithEncoding(System.String)] Unknown reference link target &#39;M:Suresking.Utility.EncodingHelper.DecodeBytes(System.Byte[])&#39;.
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Enumeration.AbsoluteDifference(Suresking.Utility.Enumeration,Suresking.Utility.Enumeration)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Enumeration.AbsoluteDifference(Suresking.Utility.Enumeration,Suresking.Utility.Enumeration)] Missing &lt;param name=&quot;firstValue&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Enumeration.AbsoluteDifference(Suresking.Utility.Enumeration,Suresking.Utility.Enumeration)] Missing &lt;param name=&quot;secondValue&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Enumeration.CompareTo(System.Object)] Missing &lt;param name=&quot;other&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Enumeration.FromId``1(System.Int32)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Enumeration.FromName``1(System.String)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Enumeration.GetAll``1] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Enumeration.op_Equality(Suresking.Utility.Enumeration,Suresking.Utility.Enumeration)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Enumeration.op_Equality(Suresking.Utility.Enumeration,Suresking.Utility.Enumeration)] Missing &lt;param name=&quot;left&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Enumeration.op_Equality(Suresking.Utility.Enumeration,Suresking.Utility.Enumeration)] Missing &lt;param name=&quot;right&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Enumeration.op_Inequality(Suresking.Utility.Enumeration,Suresking.Utility.Enumeration)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Enumeration.op_Inequality(Suresking.Utility.Enumeration,Suresking.Utility.Enumeration)] Missing &lt;param name=&quot;left&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Enumeration.op_Inequality(Suresking.Utility.Enumeration,Suresking.Utility.Enumeration)] Missing &lt;param name=&quot;right&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Enumeration.TryFromId``1(System.Int32,``0@)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Enumeration.TryFromId``1(System.Int32,``0@)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Enumeration.TryFromId``1(System.Int32,``0@)] Missing &lt;param name=&quot;id&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Enumeration.TryFromId``1(System.Int32,``0@)] Missing &lt;param name=&quot;result&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Enumeration.TryFromName``1(System.String,``0@)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Enumeration.TryFromName``1(System.String,``0@)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Enumeration.TryFromName``1(System.String,``0@)] Missing &lt;param name=&quot;name&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Enumeration.TryFromName``1(System.String,``0@)] Missing &lt;param name=&quot;result&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.GetSheetInfoAsync(System.String,System.Threading.CancellationToken)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.GetSheetInfoAsync(System.String,System.Threading.CancellationToken)] Missing &lt;param name=&quot;filePath&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.GetSheetInfoAsync(System.String,System.Threading.CancellationToken)] Missing &lt;param name=&quot;cancellationToken&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ProcessLargeExcelStreamingAsync(System.String,System.Int32,System.Func{System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.String}},System.Threading.Tasks.Task},System.Int32,System.IProgress{System.Int32},System.Threading.CancellationToken)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ProcessLargeExcelStreamingAsync(System.String,System.Int32,System.Func{System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.String}},System.Threading.Tasks.Task},System.Int32,System.IProgress{System.Int32},System.Threading.CancellationToken)] Missing &lt;param name=&quot;filePath&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ProcessLargeExcelStreamingAsync(System.String,System.Int32,System.Func{System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.String}},System.Threading.Tasks.Task},System.Int32,System.IProgress{System.Int32},System.Threading.CancellationToken)] Missing &lt;param name=&quot;headerRows&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ProcessLargeExcelStreamingAsync(System.String,System.Int32,System.Func{System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.String}},System.Threading.Tasks.Task},System.Int32,System.IProgress{System.Int32},System.Threading.CancellationToken)] Missing &lt;param name=&quot;rowProcessor&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ProcessLargeExcelStreamingAsync(System.String,System.Int32,System.Func{System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.String}},System.Threading.Tasks.Task},System.Int32,System.IProgress{System.Int32},System.Threading.CancellationToken)] Missing &lt;param name=&quot;batchSize&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ProcessLargeExcelStreamingAsync(System.String,System.Int32,System.Func{System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.String}},System.Threading.Tasks.Task},System.Int32,System.IProgress{System.Int32},System.Threading.CancellationToken)] Missing &lt;param name=&quot;progress&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ProcessLargeExcelStreamingAsync(System.String,System.Int32,System.Func{System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.String}},System.Threading.Tasks.Task},System.Int32,System.IProgress{System.Int32},System.Threading.CancellationToken)] Missing &lt;param name=&quot;cancellationToken&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ProcessLargeExcelStreamingGenericAsync``1(System.String,System.Int32,System.Func{System.Collections.Generic.Dictionary{System.String,System.String},``0},System.Func{System.Collections.Generic.List{``0},System.Threading.Tasks.Task},System.Int32,System.IProgress{System.Int32},System.Threading.CancellationToken)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ProcessLargeExcelStreamingGenericAsync``1(System.String,System.Int32,System.Func{System.Collections.Generic.Dictionary{System.String,System.String},``0},System.Func{System.Collections.Generic.List{``0},System.Threading.Tasks.Task},System.Int32,System.IProgress{System.Int32},System.Threading.CancellationToken)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ProcessLargeExcelStreamingGenericAsync``1(System.String,System.Int32,System.Func{System.Collections.Generic.Dictionary{System.String,System.String},``0},System.Func{System.Collections.Generic.List{``0},System.Threading.Tasks.Task},System.Int32,System.IProgress{System.Int32},System.Threading.CancellationToken)] Missing &lt;param name=&quot;filePath&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ProcessLargeExcelStreamingGenericAsync``1(System.String,System.Int32,System.Func{System.Collections.Generic.Dictionary{System.String,System.String},``0},System.Func{System.Collections.Generic.List{``0},System.Threading.Tasks.Task},System.Int32,System.IProgress{System.Int32},System.Threading.CancellationToken)] Missing &lt;param name=&quot;headerRows&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ProcessLargeExcelStreamingGenericAsync``1(System.String,System.Int32,System.Func{System.Collections.Generic.Dictionary{System.String,System.String},``0},System.Func{System.Collections.Generic.List{``0},System.Threading.Tasks.Task},System.Int32,System.IProgress{System.Int32},System.Threading.CancellationToken)] Missing &lt;param name=&quot;rowConverter&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ProcessLargeExcelStreamingGenericAsync``1(System.String,System.Int32,System.Func{System.Collections.Generic.Dictionary{System.String,System.String},``0},System.Func{System.Collections.Generic.List{``0},System.Threading.Tasks.Task},System.Int32,System.IProgress{System.Int32},System.Threading.CancellationToken)] Missing &lt;param name=&quot;rowProcessor&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ProcessLargeExcelStreamingGenericAsync``1(System.String,System.Int32,System.Func{System.Collections.Generic.Dictionary{System.String,System.String},``0},System.Func{System.Collections.Generic.List{``0},System.Threading.Tasks.Task},System.Int32,System.IProgress{System.Int32},System.Threading.CancellationToken)] Missing &lt;param name=&quot;batchSize&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ProcessLargeExcelStreamingGenericAsync``1(System.String,System.Int32,System.Func{System.Collections.Generic.Dictionary{System.String,System.String},``0},System.Func{System.Collections.Generic.List{``0},System.Threading.Tasks.Task},System.Int32,System.IProgress{System.Int32},System.Threading.CancellationToken)] Missing &lt;param name=&quot;progress&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ProcessLargeExcelStreamingGenericAsync``1(System.String,System.Int32,System.Func{System.Collections.Generic.Dictionary{System.String,System.String},``0},System.Func{System.Collections.Generic.List{``0},System.Threading.Tasks.Task},System.Int32,System.IProgress{System.Int32},System.Threading.CancellationToken)] Missing &lt;param name=&quot;cancellationToken&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ProcessLargeExcelStreamingWithProgressAsync(System.String,System.Int32,System.Func{System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.String}},System.Threading.Tasks.Task},System.Int32,System.IProgress{System.String},System.IProgress{System.Int32},System.Threading.CancellationToken)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ProcessLargeExcelStreamingWithProgressAsync(System.String,System.Int32,System.Func{System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.String}},System.Threading.Tasks.Task},System.Int32,System.IProgress{System.String},System.IProgress{System.Int32},System.Threading.CancellationToken)] Missing &lt;param name=&quot;filePath&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ProcessLargeExcelStreamingWithProgressAsync(System.String,System.Int32,System.Func{System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.String}},System.Threading.Tasks.Task},System.Int32,System.IProgress{System.String},System.IProgress{System.Int32},System.Threading.CancellationToken)] Missing &lt;param name=&quot;headerRows&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ProcessLargeExcelStreamingWithProgressAsync(System.String,System.Int32,System.Func{System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.String}},System.Threading.Tasks.Task},System.Int32,System.IProgress{System.String},System.IProgress{System.Int32},System.Threading.CancellationToken)] Missing &lt;param name=&quot;rowProcessor&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ProcessLargeExcelStreamingWithProgressAsync(System.String,System.Int32,System.Func{System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.String}},System.Threading.Tasks.Task},System.Int32,System.IProgress{System.String},System.IProgress{System.Int32},System.Threading.CancellationToken)] Missing &lt;param name=&quot;batchSize&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ProcessLargeExcelStreamingWithProgressAsync(System.String,System.Int32,System.Func{System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.String}},System.Threading.Tasks.Task},System.Int32,System.IProgress{System.String},System.IProgress{System.Int32},System.Threading.CancellationToken)] Missing &lt;param name=&quot;statusProgress&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ProcessLargeExcelStreamingWithProgressAsync(System.String,System.Int32,System.Func{System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.String}},System.Threading.Tasks.Task},System.Int32,System.IProgress{System.String},System.IProgress{System.Int32},System.Threading.CancellationToken)] Missing &lt;param name=&quot;rowProgress&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ProcessLargeExcelStreamingWithProgressAsync(System.String,System.Int32,System.Func{System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.String}},System.Threading.Tasks.Task},System.Int32,System.IProgress{System.String},System.IProgress{System.Int32},System.Threading.CancellationToken)] Missing &lt;param name=&quot;cancellationToken&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ReadHeadersAsync(System.String,System.Int32,System.Threading.CancellationToken)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ReadHeadersAsync(System.String,System.Int32,System.Threading.CancellationToken)] Missing &lt;param name=&quot;filePath&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ReadHeadersAsync(System.String,System.Int32,System.Threading.CancellationToken)] Missing &lt;param name=&quot;headerRows&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ReadHeadersAsync(System.String,System.Int32,System.Threading.CancellationToken)] Missing &lt;param name=&quot;cancellationToken&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.ExcelReadHelper.ReadLargeExcelToDataTableAsync(System.String,System.Int32,System.Int32,System.Boolean,System.IProgress{System.Int32},System.Text.Encoding,System.Threading.CancellationToken)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.HisConfig.GetConfiguredFileNames] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.HisConfig.GetConfiguredFullPath(System.String)] Missing &lt;param name=&quot;key&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.HisConfig.GetConfiguredFullPaths] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.HisConfig.GetConfiguredKeys] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.IHisConfig.GetConfiguredFileNames] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.IHisConfig.GetConfiguredFullPath(System.String)] Missing &lt;param name=&quot;key&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.IHisConfig.GetConfiguredFullPaths] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.IHisConfig.GetConfiguredKeys] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [T:Suresking.Utility.InitializableViewModelBase] Unknown reference link target &#39;T:Suresking.Mvvm.ObservableObject&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [T:Suresking.Utility.InitializableViewModelBase] Unknown reference link target &#39;T:Suresking.Mvvm.ObservableObject&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [T:Suresking.Utility.InitializableViewModelBase] Unknown reference link target &#39;T:Suresking.Mvvm.IAsyncRelayCommand&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [T:Suresking.Utility.InitializableViewModelBase] Unknown reference link target &#39;M:Suresking.Utility.InitializableViewModelBase.RetryLoadAsync&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [Properties.T:Suresking.Utility.InitializableViewModelBase] Unknown reference link target &#39;T:Suresking.Mvvm.IAsyncRelayCommand&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [Properties.T:Suresking.Utility.InitializableViewModelBase] Unknown reference link target &#39;M:Suresking.Utility.InitializableViewModelBase.RetryLoadAsync&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [P:Suresking.Utility.InitializableViewModelBase.RetryLoadCommand] Unknown reference link target &#39;T:Suresking.Mvvm.IAsyncRelayCommand&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [P:Suresking.Utility.InitializableViewModelBase.RetryLoadCommand] Unknown reference link target &#39;M:Suresking.Utility.InitializableViewModelBase.RetryLoadAsync&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [P:Suresking.Utility.InitializableViewModelBase.RetryLoadCommand] Unknown reference link target &#39;T:Suresking.Mvvm.IAsyncRelayCommand&#39;.
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.IoHelper.CopyDirectory(System.String,System.String,Suresking.Utility.CopyDirectoryOptions)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.IoHelper.CopyDirectoryAsync(System.String,System.String,Suresking.Utility.CopyDirectoryOptions,System.Threading.CancellationToken)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.IoHelper.CopyDirectoryAsync(System.String,System.String,Suresking.Utility.CopyDirectoryOptions,System.Threading.CancellationToken)] Missing &lt;param name=&quot;sourceDir&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.IoHelper.CopyDirectoryAsync(System.String,System.String,Suresking.Utility.CopyDirectoryOptions,System.Threading.CancellationToken)] Missing &lt;param name=&quot;destDir&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.IoHelper.CopyDirectoryAsync(System.String,System.String,Suresking.Utility.CopyDirectoryOptions,System.Threading.CancellationToken)] Missing &lt;param name=&quot;options&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.IoHelper.CopyDirectoryAsync(System.String,System.String,Suresking.Utility.CopyDirectoryOptions,System.Threading.CancellationToken)] Missing &lt;param name=&quot;cancellationToken&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.IoHelper.EnsureFileWithContent(System.String,System.String,System.Boolean,System.Text.Encoding)] Missing &lt;param name=&quot;encoding&quot;/&gt; documentation
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Suresking.Utility.ServiceRegistrar.GetContainer] Unknown reference link target &#39;T:Suresking.DryIoc.IContainer&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Suresking.Utility.ServiceRegistrar.GetContainer] Unknown reference link target &#39;T:Suresking.DryIoc.IContainer&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Suresking.Utility.ServiceRegistrar.RegisterServices(System.Reflection.Assembly,System.Action{Suresking.DryIoc.IContainer})] Unknown reference link target &#39;T:Suresking.DryIoc.IContainer&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Suresking.Utility.ServiceRegistrar.RegisterServices(System.Reflection.Assembly,System.Action{Suresking.DryIoc.IContainer})] Unknown reference link target &#39;T:Suresking.DryIoc.IContainer&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Suresking.Utility.ServiceRegistrar.RegisterServices(System.Reflection.Assembly,System.Action{Suresking.DryIoc.IContainer})] Unknown reference link target &#39;T:Suresking.DryIoc.IContainer&#39;.
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.SimpleExcelWriter.#ctor(System.String,System.Double,System.Double,System.Int32)] Missing &lt;param name=&quot;sheetName&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.SimpleExcelWriter.#ctor(System.String,System.Double,System.Double,System.Int32)] Missing &lt;param name=&quot;rowHeight&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.SimpleExcelWriter.#ctor(System.String,System.Double,System.Double,System.Int32)] Missing &lt;param name=&quot;columnWidth&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.SimpleExcelWriter.#ctor(System.String,System.Double,System.Double,System.Int32)] Missing &lt;param name=&quot;fontSize&quot;/&gt; documentation
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Suresking.Utility.SimpleExcelWriter.AddDataTable(System.Data.DataTable,System.String[],System.Boolean)] Unknown reference link target &#39;M:Suresking.Utility.SimpleExcelWriter.MergeFullRow(System.Int32,System.Int32)&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Suresking.Utility.SimpleExcelWriter.AddList``1(System.Collections.Generic.IEnumerable{``0},System.String[],System.Boolean)] Unknown reference link target &#39;M:Suresking.Utility.SimpleExcelWriter.MergeFullRow(System.Int32,System.Int32)&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [T:Suresking.Utility.StrHelper] Unknown reference link target &#39;M:Suresking.Utility.StrHelper.CleanNumericString(System.String)&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Suresking.Utility.StrHelper.ToByte(System.String,System.Byte)] Unknown reference link target &#39;M:Suresking.Utility.StrHelper.CleanNumericString(System.String)&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Suresking.Utility.StrHelper.ToDateTime(System.String,System.DateTime)] Unknown reference link target &#39;M:Suresking.Utility.StrHelper.TryParseDateTime(System.String,System.DateTime@)&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Suresking.Utility.StrHelper.ToDecimal(System.String,System.Decimal)] Unknown reference link target &#39;M:Suresking.Utility.StrHelper.CleanNumericString(System.String)&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Suresking.Utility.StrHelper.ToDouble(System.String,System.Double)] Unknown reference link target &#39;M:Suresking.Utility.StrHelper.CleanNumericString(System.String)&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Suresking.Utility.StrHelper.ToFloat(System.String,System.Single)] Unknown reference link target &#39;M:Suresking.Utility.StrHelper.CleanNumericString(System.String)&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Suresking.Utility.StrHelper.ToInt(System.String,System.Int32)] Unknown reference link target &#39;M:Suresking.Utility.StrHelper.CleanNumericString(System.String)&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Suresking.Utility.StrHelper.ToShort(System.String,System.Int16)] Unknown reference link target &#39;M:Suresking.Utility.StrHelper.CleanNumericString(System.String)&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Suresking.Utility.StringExtension.Contains(System.String,System.Collections.Generic.IEnumerable{System.String},System.Boolean)] Unknown reference link target &#39;F:Suresking.Utility.StringExtension._regexCache&#39;.
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.StringExtension.ContainsKey(System.String,System.String,System.Char[])] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.StringExtension.Join(System.Collections.Generic.IEnumerable{System.String},System.String)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Student.#ctor(System.Int32,System.String,System.Int32)] Missing &lt;param name=&quot;id&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Student.#ctor(System.Int32,System.String,System.Int32)] Missing &lt;param name=&quot;name&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Student.#ctor(System.Int32,System.String,System.Int32)] Missing &lt;param name=&quot;age&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Student.#ctor(System.Int32,System.String,System.Int32,System.String,System.String,System.Double)] Missing &lt;param name=&quot;id&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Student.#ctor(System.Int32,System.String,System.Int32,System.String,System.String,System.Double)] Missing &lt;param name=&quot;name&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Student.#ctor(System.Int32,System.String,System.Int32,System.String,System.String,System.Double)] Missing &lt;param name=&quot;age&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Student.#ctor(System.Int32,System.String,System.Int32,System.String,System.String,System.Double)] Missing &lt;param name=&quot;gender&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Student.#ctor(System.Int32,System.String,System.Int32,System.String,System.String,System.Double)] Missing &lt;param name=&quot;className&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Student.#ctor(System.Int32,System.String,System.Int32,System.String,System.String,System.Double)] Missing &lt;param name=&quot;score&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Student.GetStudentInfo] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Student.IsExcellent] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Student.Study(System.String)] Missing &lt;param name=&quot;subject&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Student.TakeExam(System.String)] Missing &lt;param name=&quot;examName&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Student.ToString] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Student.UpdateScore(System.Double)] Missing &lt;param name=&quot;newScore&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.StudentDataGenerator.GenerateRandomStudents(System.Int32)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.StudentDataGenerator.GenerateRandomStudents(System.Int32)] Missing &lt;param name=&quot;count&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.StudentDataGenerator.GenerateSpecialCaseStudents] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.StudentDataGenerator.GenerateTestStudents] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.StudentExtensions.IsAdult(Suresking.Utility.Student)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.StudentExtensions.IsAdult(Suresking.Utility.Student)] Missing &lt;param name=&quot;student&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.StudentExtensions.PrintInfo(Suresking.Utility.Student)] Missing &lt;param name=&quot;student&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.Template.ToString] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Suresking.Utility.XmlHelper.SerializeToXmlFileAsync``1(``0,System.String,System.Boolean,System.Boolean,System.Threading.CancellationToken)] Missing &lt;returns&gt; documentation
+Processed 750 topic(s)
+155 warning(s)
+CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 14 of 15.
+CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 2 of 30.
+<plugIn name="Compact Table of Contents Generator" behavior="After" priority="1000">
+Generating website TOC information
+</plugIn>    Last step completed in 00:00:05.9231
+</buildStep>
+<buildStep step="CopyStandardHelpContent">
+Copying standard help content...
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\css\brands.css -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\css\brands.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\css\brands.min.css -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\css\brands.min.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\css\bulma.css -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\css\bulma.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\css\bulma.min.css -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\css\bulma.min.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\css\fontawesome.css -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\css\fontawesome.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\css\fontawesome.min.css -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\css\fontawesome.min.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\css\ja-JP.css -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\css\ja-JP.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\css\ko-KR.css -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\css\ko-KR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\css\presentationStyle.css -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\css\presentationStyle.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\css\regular.css -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\css\regular.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\css\regular.min.css -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\css\regular.min.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\css\solid.css -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\css\solid.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\css\solid.min.css -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\css\solid.min.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\css\zh-CN.css -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\css\zh-CN.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\css\zh-TW.css -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\css\zh-TW.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\icons\favicon.ico -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\icons\favicon.ico
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\scripts\clipboard.min.js -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\scripts\clipboard.min.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\scripts\highlight.min.js -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\scripts\highlight.min.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\scripts\jquery-3.7.1.min.js -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\scripts\jquery-3.7.1.min.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\scripts\lunr.de.js -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\scripts\lunr.de.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\scripts\lunr.es.js -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\scripts\lunr.es.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\scripts\lunr.fr.js -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\scripts\lunr.fr.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\scripts\lunr.it.js -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\scripts\lunr.it.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\scripts\lunr.ja.js -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\scripts\lunr.ja.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\scripts\lunr.js -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\scripts\lunr.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\scripts\lunr.ko.js -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\scripts\lunr.ko.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\scripts\lunr.min.js -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\scripts\lunr.min.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\scripts\lunr.multi.js -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\scripts\lunr.multi.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\scripts\lunr.pt.js -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\scripts\lunr.pt.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\scripts\lunr.ru.js -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\scripts\lunr.ru.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\scripts\lunr.stemmer.support.js -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\scripts\lunr.stemmer.support.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\scripts\lunr.zh.js -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\scripts\lunr.zh.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\scripts\presentationStyle.js -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\scripts\presentationStyle.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\scripts\themeSwitcher.js -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\scripts\themeSwitcher.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\scripts\tinyseg.js -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\scripts\tinyseg.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\webfonts\fa-brands-400.woff2 -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\webfonts\fa-brands-400.woff2
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\webfonts\fa-regular-400.woff2 -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\webfonts\fa-regular-400.woff2
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\webfonts\fa-solid-900.woff2 -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\webfonts\fa-solid-900.woff2
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\webfonts\fa-v4compatibility.woff2 -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\webfonts\fa-v4compatibility.woff2
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\RootWebsiteContent\index.html -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\index.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Themed2026\RootWebsiteContent\search.html -&gt; P:\gitee\ApiHtml\Help\Working\Output\Website\search.html
+    Last step completed in 00:00:00.4471
+</buildStep>
+<buildStep step="GenerateFullTextIndex">
+Generating full-text index for the website...
+
+    Last step completed in 00:00:00.7501
+</buildStep>
+<buildStep step="CopyingWebsiteFiles">
+Copying website files to output folder...
+
+Copied 500 files
+Copied 794 files for the website content
+    Last step completed in 00:00:00.2801
+</buildStep>
+<buildStep step="CleanIntermediates">
+Removing intermediate files...
+    Last step completed in 00:00:00.0214
+</buildStep>
+<buildStep step="Completed">
+
+Build completed successfully at 2026/11/22 20:39:48.  Total time: 00:00:11.5750
+
+</buildStep>
+</shfbBuild>

@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html ><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.min.css?v=5AD36185" /><link rel="stylesheet" href="../css/fontawesome.min.css?v=5AD36185" /><link rel="stylesheet" href="../css/solid.min.css?v=5AD36185" /><link rel="stylesheet" href="../css/regular.min.css?v=5AD36185" /><link rel="stylesheet" href="../css/brands.min.css?v=5AD36185" /><link rel="stylesheet" href="../css/presentationStyle.css?v=5AD36185" /><link rel="stylesheet" href="../css/zh-CN.css" /><script src="../scripts/jquery-3.7.1.min.js"></script><script src="../scripts/clipboard.min.js?v=5AD36185"></script><script src="../scripts/highlight.min.js?v=5AD36185"></script><script src="../scripts/themeSwitcher.js?v=5AD36185"></script><script src="../scripts/presentationStyle.js?v=5AD36185"></script><title>LoggerHelper 类</title><meta name="Title" content="LoggerHelper" /><meta name="Help.Id" content="T:Suresking.Utility.LoggerHelper" /><meta name="Help.ContentType" content="Reference" /><meta name="container" content="Suresking.Utility" /><meta name="guid" content="T_Suresking_Utility_LoggerHelper" /><meta name="Description" content="单文件静态日志类。 支持控制台和文件输出，支持日志级别和滚动文件。 采用异步队列写入方式，避免日志操作阻塞业务线程。 通过 、、 自动捕获调用者信息。" /><meta name="tocParentId" content="1" /></head><body><header class="pageHeader" id="Header"><div class="level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div id="DocumentationTitle" class="level-item">A Sandcastle Documented Class Library</div></div><div id="LangFilterSearchContainer" class="level-right"><div id="ThemeSwitcher" class="level-item" title="Toggle theme" aria-label="Toggle theme"><span class="icon"><i class="fa fa-regular fa-moon theme-icon-dark"></i><i class="fa fa-sun theme-icon-light"></i></span></div><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></header><main><article><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div id="ContentContainer" class="columns pl-5 pr-5"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu"><li>Loading...</li></ul></nav></div><div id="Resizer" class="is-hidden"></div><div id="TopicContent" class="column content is-7"><h1>Logger<wbr />Helper 类</h1><div class="summary">
+            单文件静态日志类。
+            支持控制台和文件输出，支持日志级别和滚动文件。
+            采用异步队列写入方式，避免日志操作阻塞业务线程。
+            通过 <a href="https://learn.microsoft.com/dotnet/api/system.runtime.compilerservices.callermembernameattribute" target="_blank" rel="noopener noreferrer">CallerMemberNameAttribute</a>、<a href="https://learn.microsoft.com/dotnet/api/system.runtime.compilerservices.callerfilepathattribute" target="_blank" rel="noopener noreferrer">CallerFilePathAttribute</a>、
+            <a href="https://learn.microsoft.com/dotnet/api/system.runtime.compilerservices.callerlinenumberattribute" target="_blank" rel="noopener noreferrer">CallerLineNumberAttribute</a> 自动捕获调用者信息。
+            </div><h2 class="quickLinkHeader">Definition</h2><div id="IDBSection"><strong>命名空间：</strong> <a href="N_Suresking_Utility.htm">Suresking.Utility</a><br /><strong>程序集：</strong> Suresking.Utility (在 Suresking.Utility.dll 中) 版本：1.3.20+9f5f0e39c286801d0347077a3bcbea48de44d8b3<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="复制"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>复制</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="identifier">LoggerHelper</span></code></pre></div></div><dl class="inheritanceHierarchy"><dt>Inheritance</dt><dd><a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <span class="selflink">LoggerHelper</span></dd></dl></div><h2 class="quickLinkHeader">方法</h2><div id="IDBEASection"><table id="MethodList" class="table is-hoverable"><tr><td><a href="M_Suresking_Utility_LoggerHelper_Critical_1.htm">Critical(String, String, String, Int32)</a></td><td>
+            记录严重错误级别日志。
+            </td></tr><tr><td><a href="M_Suresking_Utility_LoggerHelper_Critical.htm">Critical(String, Exception, String, String, Int32)</a></td><td>
+            记录严重错误级别日志（附带异常信息）。
+            会将异常消息和堆栈跟踪拼接到日志内容中。
+            </td></tr><tr><td><a href="M_Suresking_Utility_LoggerHelper_Debug.htm">Debug</a></td><td>
+            记录调试级别日志。
+            </td></tr><tr><td><a href="M_Suresking_Utility_LoggerHelper_DebugFormat.htm">DebugFormat</a></td><td>
+            记录调试级别日志（支持字符串格式化）。
+            </td></tr><tr><td><a href="M_Suresking_Utility_LoggerHelper_Error_1.htm">Error(String, String, String, Int32)</a></td><td>
+            记录错误级别日志。
+            </td></tr><tr><td><a href="M_Suresking_Utility_LoggerHelper_Error.htm">Error(String, Exception, String, String, Int32)</a></td><td>
+            记录错误级别日志（附带异常信息）。
+            会将异常消息和堆栈跟踪拼接到日志内容中。
+            </td></tr><tr><td><a href="M_Suresking_Utility_LoggerHelper_ErrorFormat.htm">ErrorFormat</a></td><td>
+            记录错误级别日志（支持字符串格式化）。
+            </td></tr><tr><td><a href="M_Suresking_Utility_LoggerHelper_Info.htm">Info</a></td><td>
+            记录信息级别日志。
+            </td></tr><tr><td><a href="M_Suresking_Utility_LoggerHelper_InfoFormat.htm">InfoFormat</a></td><td>
+            记录信息级别日志（支持字符串格式化）。
+            </td></tr><tr><td><a href="M_Suresking_Utility_LoggerHelper_SetBackupCount.htm">SetBackupCount</a></td><td>
+            设置滚动备份文件保留数量。
+            </td></tr><tr><td><a href="M_Suresking_Utility_LoggerHelper_SetConsoleOutput.htm">SetConsoleOutput</a></td><td>
+            设置是否同时输出到控制台。
+            </td></tr><tr><td><a href="M_Suresking_Utility_LoggerHelper_SetEnableAsync.htm">SetEnableAsync</a></td><td>
+            设置是否启用异步日志写入。
+            关闭后日志将在调用线程同步写入。
+            </td></tr><tr><td><a href="M_Suresking_Utility_LoggerHelper_SetLogLevel.htm">SetLogLevel</a></td><td>
+            设置日志级别。低于该级别的日志将被忽略。
+            </td></tr><tr><td><a href="M_Suresking_Utility_LoggerHelper_SetLogRootPath.htm">SetLogRootPath</a></td><td>
+            设置日志根目录，并自动更新当前日志文件路径。
+            若目录不存在则自动创建。
+            </td></tr><tr><td><a href="M_Suresking_Utility_LoggerHelper_SetMaxFileSize.htm">SetMaxFileSize</a></td><td>
+            设置单个日志文件的最大字节数，超过后触发滚动。
+            </td></tr><tr><td><a href="M_Suresking_Utility_LoggerHelper_SetShowCallerInfo.htm">SetShowCallerInfo</a></td><td>
+            设置是否在日志中显示调用者信息（类名、方法名、行号）。
+            </td></tr><tr><td><a href="M_Suresking_Utility_LoggerHelper_Shutdown.htm">Shutdown</a></td><td>
+            关闭日志器并释放资源。
+            停止后台线程，处理队列中剩余消息，并释放队列。
+            应在应用程序退出前调用，以避免日志丢失。
+            </td></tr><tr><td><a href="M_Suresking_Utility_LoggerHelper_Warning.htm">Warning</a></td><td>
+            记录警告级别日志。
+            </td></tr></table></div><h2 class="quickLinkHeader">参见</h2><div id="seeAlsoSection"><h4>引用</h4><div><a href="N_Suresking_Utility.htm">Suresking.Utility 命名空间</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Definition</a></li><li><a class="quickLink">方法</a></li><li><a class="quickLink">参见</a></li></ul></nav></div></div></article></main><script>$(function(){
+SetDefaultLanguage("cs");
+LoadToc();
+InitializeQuickLinks();
+hljs.highlightAll();
+});</script></body></html>
