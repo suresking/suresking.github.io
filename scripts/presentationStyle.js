@@ -299,7 +299,7 @@ function LoadToc()
     const selectedTopicId = $("meta[name='guid']").attr("content");
 
     $.ajax({
-        url: "../toc.json?v=B155A6A0",
+        url: "../toc.json?v=1DDF8E5",
         dataType: "json",
         success: function (data)
         {
@@ -497,7 +497,7 @@ function PerformSearch()
         searchResults.innerHTML = "Loading index...";
 
         $.ajax({
-            url: "searchIndex.json?v=B155A6A0",
+            url: "searchIndex.json?v=1DDF8E5",
             dataType: "json",
             success: function (data)
             {
@@ -515,7 +515,7 @@ function PerformSearch()
     if(!fileIndex)
     {
         $.ajax({
-            url: "fileIndex.json?v=B155A6A0",
+            url: "fileIndex.json?v=1DDF8E5",
             dataType: "json",
             success: function (data)
             {
